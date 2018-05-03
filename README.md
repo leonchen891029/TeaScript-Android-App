@@ -2,7 +2,7 @@
 # TeaScript Android [客户端](https://github.com/leonchen891029/TeaScript-Android-App)
 
 ## TeaScript Android 客户端简介
-TeaScript是一门全新的动态脚本语言，该App旨在构建一个介绍该门语言的社区
+TeaScript是一门全新的动态脚本语言，该App旨在构建一个介绍该门语言的社区<br>
 ![enter image description here](https://github.com/leonchen891029/TeaScriptImage/raw/master/work/launcher.png)
 
 -------------------------------------------------------------------------------------------------------------
