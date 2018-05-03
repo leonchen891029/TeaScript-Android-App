@@ -1,5 +1,4 @@
 #TeaScript Android [客户端](https://github.com/leonchen891029/TeaScript-Android-App)
-
 ------------------------------------------------------------------------------
 
 ## TeaScript Android 客户端简介
