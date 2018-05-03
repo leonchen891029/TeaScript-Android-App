@@ -5,8 +5,6 @@
 TeaScript是一门全新的动态脚本语言，该App旨在构建一个介绍该门语言的社区<br>
 ![enter image description here](https://github.com/leonchen891029/TeaScriptImage/raw/master/work/launcher.png)
 
--------------------------------------------------------------------------------------------------------------
-
 ## 开发环境 
 Android Studio 
 
