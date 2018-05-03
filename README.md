@@ -1,6 +1,6 @@
 #TeaScript Android [客户端](https://github.com/leonchen891029/TeaScript-Android-App)
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 ## TeaScript Android 客户端简介
 TeaScript是一门全新的动态脚本语言，该App旨在构建一个介绍该门语言的社区
@@ -42,6 +42,7 @@ Android Studio
 <img src="https://github.com/leonchen891029/TeaScriptImage/raw/master/work/blog_list.png"  >
 <img src="https://github.com/leonchen891029/TeaScriptImage/raw/master/work/question_list.png" >
 <img src="https://github.com/leonchen891029/TeaScriptImage/raw/master/work/event_list.png"  ></div>
+
  ------------------------------------------------------------------------------------------------------------
 <font size=4>**(2)TeaScript**</font>
 
@@ -50,6 +51,7 @@ Android Studio
 ![enter image description here](https://github.com/leonchen891029/TeaScriptImage/raw/master/work/teascript.png)
 
 -------------------------------------------------------------------------------------------------------------
+
 <font size=4>**(3)快速操作按钮**</font>
 
 <font size=4>提供发布文字，语音，二维码扫描，找人等服务的快捷按钮</font>
@@ -57,6 +59,7 @@ Android Studio
 ![enter image description here](https://github.com/leonchen891029/TeaScriptImage/raw/master/work/quick_option.png)
 
 -------------------------------------------------------------------------------------------------------------
+
 <font size=4>**(4)Teatime**</font>
 
 <font size=4>提供给用户一个可以进行自由闲聊的模块</font>
