@@ -217,7 +217,8 @@ OnWebViewImageListener.java WebView上面的图片监听器
 #### 1.back包(通过BackActivity加载不同Fragment)
 BackActivity.java 加载不同Fragment的Activity<br>
 BackFragmentEnum.java 管理不同的Fragment的枚举类<br>
-#####currencyfragment包(其他特定模块所使用的Fragment并未列入其中)
+
+##### currencyfragment包(其他特定模块所使用的Fragment并未列入其中)
 ActiveListFragment.java 动态ListFragment<br>
 BrowerFragment.java 浏览器Fragment<br>
 ChatMessagerListFragment.java 聊天记录ListFragment<br>
@@ -230,7 +231,7 @@ VoiceTeatimeFragment.java 语音Teatime发布Fragment<br>
 
 #### 2.detail包(详情包)
 DetailActivity.java 加载不同DetailFragment的Activity
-#####fragment包
+##### fragment包
 BlogDetailFragment.java 博客详情Fragment<br>
 EventDetailFragment.java 活动详情Fragment<br>
 NewsDetailFragment.java 新闻详情Fragment<br>
@@ -240,18 +241,18 @@ TeatimeDetailFragment.java Teatime详情Fragment<br>
 ToolBarFragment.java 导航栏Fragment<br>
 
 #### 3.general包(综合界面包)
-#####(1)activity包
+##### (1)activity包
 PreviewImageActivity.java 图片预览Activity<br>
 
-#####(2)adapter包
+##### (2)adapter包
 ViewHolder.java 综合界面通用的ViewHolder<br>
-######generaladapter包
+###### generaladapter包
 BlogAdapter.java 综合界面下的博客适配器<br>
 EventAdapter.java 综合界面下的活动适配器<br>
 NewsAdapter.java 综合界面下的新闻适配器<br>
 QuestionAdapter.java 综合界面下的问答适配器<br>
 QuestionGridAdapter.java 综合界面下问答界面四个分类按钮适配器<br>
-######teatimeadapter包
+###### teatimeadapter包
 TeatimeCommentAdapter.java teatime评论RecyclerAdapter<br>
 TeatimeLikeUserAdapter.java teatime点赞用户的RecylerAdapter<br>
 
@@ -259,17 +260,17 @@ TeatimeLikeUserAdapter.java teatime点赞用户的RecylerAdapter<br>
 AppOperator.java App异步线程池类<br>
 
 ##### (4)base包
-######baseactivity包
+###### baseactivity包
 BaseActivity.java 综合界面下使用的activity基类<br>
 BaseBackActivity.java XXXDetailActivity基类<br>
-######baseadapter包
+###### baseadapter包
 BaseListAdapter.java 综合界面下使用的BaseListAdapter<br>
 BaseRecyclerAdapter.java RecylerView.Adapter基类<br>
-######basebean包
+###### basebean包
 PageBean.java 页面bean类<br>
 ResultBean.java 返回结果bean类<br>
 SoftwareDetail.java 软件详情bean类<br>
-######basefragment包
+###### basefragment包
 BaseFragment.java 综合界面下的Fragment基类<br>
 BaseListFragment.java 综合界面下的BaseListFragment基类<br>
 BaseGeneralListFragment.java GeneralListFragment基类<br>
@@ -306,7 +307,7 @@ OnCommentClickListener.java 评论点击监听器<br>
 QuestionCommentDetailActivity.java 问答评论详情Activity<br>
 
 ##### (8)detail包
-######activity包
+###### activity包
 DetailActivity.java  详情Activity的基类<br>
 BlogDetailActivity.java 博客详情Activity<br>
 EventDetailActivity.java 活动详情Activity<br>
@@ -314,7 +315,7 @@ NewsDetailActivity.java 新闻详情Activity<br>
 QuestionDetailActivity.java 问答详情Activity<br>
 SoftwareDetailActivity.java 软件详情Activity<br>
 TranslationDetailActivity.java 翻译详情Activity<br>
-######constract包(p层和v层的接口统一写在契约类中)
+###### constract包(p层和v层的接口统一写在契约类中)
 DetailContract.java 详情contract基类<br>
 BlogDetailContract.java 博客详情contract<br>
 EventDetailContract.java 活动详情contract<br>
@@ -323,7 +324,7 @@ QuestionDetailContract.java 问答详情contract<br>
 SoftwareDetailContract.java 软件详情contract<br>
 TeatimeDetailContract.java Teatime详情contract<br>
 TranslationDetailContract.java 翻译详情contract<br>
-######fragment包
+###### fragment包
 DetailFragment.java 详情Fragment的基类<br>
 BlogDetailFragment.java 与BlogDetailActivity相关联的Fragment<br>
 EventDetailFragment.java 与EventDetailActivity相关联的Fragment<br>
@@ -335,7 +336,7 @@ TranslationDetailFragment.java 与TranslationDetailActivity相关联的Fragment<
 ##### (9)fragment包
 GeneralViewPagerFragment.java 综合主界面<br>
 UserBlogFragment.java 用户博客界面<br>
-######generallistfragment包
+###### generallistfragment包
 BlogGeneralListFragment.java 综合界面下的博客ListFragment<br>
 EventGeneralListFragment.java 综合界面下的活动ListFragment<br>
 NewsGeneralListFragment.java 综合界面下的新闻ListFragment<br>
@@ -383,15 +384,15 @@ UserFavoriteListFragment.java 用户收藏列表Fragment<br>
 UserFavoriteViewPagerFragment.java 用户收藏ViewPagerFragment<br>
 
 #### 8.quickoption包(快速操作对话框)
-#####(1)activity包
+##### (1)activity包
 SelectFriendsActivity.java 发布Teatime时选择好友的Activity<br>
 TeatimePubActivity.java 发布Teatime的Activity<br>
 FindUserActivity.java 找人Activity<br>
 ShakeActivity.java 摇一摇Activity<br>
-#####(2)fragment包
+##### (2)fragment包
 ExploreFragment.java 发现的主界面Fragment
 SameCityFragment.java 同城活动ListFragment
-######softwarefragment包 
+###### softwarefragment包 
 OSSoftwareViewPagerFragment.java 开源软件ViewPagerFragment
 SoftwareCatalogListFragment.java 开源软件分类ListFragment
 SoftwareListFragment.java 开源软件介绍ListFragment
@@ -408,7 +409,7 @@ OperationResponseHandler.java 操作结果返回处理类<br>
 TSHttpClient.java AsyncHttpClient的自定义封装类<br>
 TSHttpHelper.java 获取User Agent(用户代理)信息，使服务器能够识别用户的操作系统等信息<br>
 
-####remote包
+#### remote包
 TeaScriptApi.java TeaScript网络操作封装类<br>
 TeaScriptTeamApi.java TeaScript团队相关网络操作封装类<br>
 
@@ -471,7 +472,7 @@ TeamReplyDetail.java 团队回复实体类的包装类<br>
 TeamReplyList.java 团队回复列表实体类<br>
 
 #### 4.fragment包
-#####viewpagerfragment包
+##### viewpagerfragment包
 TeamDiaryViewPagerFragment.java 团队周报ViewPagerFragment<br>
 TeamIssueViewPagerFragment.java 团队任务ViewPagerFragment<br>
 TeamMainViewPagerFragment.java 团队主界面ViewPagerFragment<br>
@@ -595,7 +596,7 @@ TSSwitchButton.java 自定义SwitchButton<br>
 TSToast.java 自定义Toast<br>
 
 
-##依赖包介绍
+## 依赖包介绍
 
 1.网络请求库 android-async-http<br>
 2.android图片加载框架 glide<br>
