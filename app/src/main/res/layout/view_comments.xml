@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/comments_title_tv"
+        style="@style/wrap_wrap"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_8"
+        android:text="相关评论"
+        android:textColor="#6a6a6a"
+        android:textSize="12sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+
+    <LinearLayout
+        android:id="@+id/comments_ll"
+        style="@style/match_wrap"
+        android:background="@color/white"
+        android:paddingTop="@dimen/space_8"
+        android:paddingBottom="@dimen/space_8"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/see_more_tv"
+        style="@style/match_wrap"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/space_16"
+        android:paddingBottom="@dimen/space_16"
+        android:text="查看更多"
+        android:textColor="@color/teascript"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color" />
+
+
+</LinearLayout>

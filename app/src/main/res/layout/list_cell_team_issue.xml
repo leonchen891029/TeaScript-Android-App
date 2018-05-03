@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:background="?attr/layout_item_bg"
+              android:orientation="vertical">
+    <!--Title-->
+    <LinearLayout
+           android:id="@+id/title_ll"
+           style="@style/match_wrap"
+           android:padding="8dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal">
+        <TextView
+            android:id="@+id/main_title_tv"
+            style="@style/wrap_wrap"
+            android:textColor="?attr/infoTextColor"
+            android:layout_marginRight="10dp"
+            android:text="标题"/>
+
+        <view style="@style/h_line" />
+    </LinearLayout>
+
+    <!--任务title-->
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/issue_state_tv"
+            style="@style/wrap_wrap"
+            android:layout_marginRight="5dp"
+            android:text="@string/fa_circle_o"
+            android:textColor="@color/main_gray"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/issue_source_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="@string/fa_team"
+            android:textColor="@color/main_gray" />
+
+        <TextView
+            android:id="@+id/issue_title_tv"
+            style="@style/list_text_title"
+            android:text="任务标题" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/issue_project_tv"
+        style="@style/list_text_info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="team_issue - 未同步" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/issue_accept_time_tv"
+            style="@style/list_text_info"
+            android:layout_marginRight="5dp"
+            android:text="完成时间" />
+
+        <TextView
+            android:id="@+id/issue_attachments_tv"
+            style="@style/list_text_info"
+            android:layout_marginRight="5dp"
+            android:text="附件1" />
+
+        <TextView
+            android:id="@+id/issue_childs_tv"
+            style="@style/list_text_info"
+            android:layout_marginRight="5dp"
+            android:text="子任务(2/10)" />
+
+        <TextView
+            android:id="@+id/issue_relations_tv"
+            style="@style/list_text_info"
+            android:layout_marginRight="5dp"
+            android:text="关联1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/issue_author_tv"
+            style="@style/list_text_info"
+            android:layout_marginRight="@dimen/space_5"
+            android:text="火蚁" />
+
+        <TextView
+            android:id="@+id/issue_assign_tv"
+            style="@style/list_text_info"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_toRightOf="@id/issue_author_tv"
+            android:text="指派给" />
+
+        <TextView
+            android:id="@+id/issue_assign_man_tv"
+            style="@style/list_text_info"
+            android:layout_toRightOf="@id/issue_assign_tv"
+            android:text="火蚁" />
+
+        <LinearLayout
+            style="@style/wrap_wrap"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <IconTextView
+                style="@style/list_text_info"
+                android:text="{fa-clock-o} " />
+
+            <TextView
+                android:id="@+id/issue_time_tv"
+                android:layout_marginRight="10dp"
+                style="@style/list_text_info" />
+
+            <IconTextView
+                style="@style/list_text_info"
+                android:text="{fa-comments-o} " />
+
+            <TextView
+                android:id="@+id/issue_comment_count_tv"
+                style="@style/list_text_info" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

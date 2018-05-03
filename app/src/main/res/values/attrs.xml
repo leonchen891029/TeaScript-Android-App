@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="infoTextColor"/>
+    <attr format="reference" name="layout_bg_normal"/>
+    <attr format="color" name="lineColor"/>
+    <attr format="reference" name="windows_bg"/>
+    <attr format="reference" name="sliding_block_bg"/>
+    <attr format="reference" name="layout_item_bg"/>
+    <attr format="reference" name="comment_reply_container_bg"/>
+    <attr format="reference" name="message_bg_left"/>
+    <attr format="reference" name="message_bg_right"/>
+
+    <attr format="reference" name="quickoption_icon_album_selector"/>
+    <attr format="reference" name="quickoption_icon_note_selector"/>
+    <attr format="reference" name="quickoption_icon_photo_selector"/>
+    <attr format="reference" name="quickoption_icon_scan_selector"/>
+    <attr format="reference" name="quickoption_icon_text_selector"/>
+    <attr format="reference" name="quickoption_icon_voice_selector"/>
+    <attr format="reference" name="quickoption_icon_software_selector" />
+    <attr format="reference" name="quickoption_icon_find_selector" />
+    <attr format="reference" name="quickoption_icon_city_selector" />
+    <attr format="reference" name="quickoption_icon_shake_selector" />
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" ></attr>
+        <attr name="border_color" format="color" ></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="slidingBlock" format="reference|color"/>
+        <attr name="allowWidthFull" format="boolean"/>
+        <attr name="disableViewPager" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CirclePagerIndicator">
+        <attr name="circle_indicator_centerHorizontal" format="boolean" />
+        <attr name="circle_indicator_follow" format="boolean" />
+        <attr name="circle_indicator_orientation" format="reference" />
+        <attr name="circle_indicator_color" format="color" />
+        <attr name="circle_indicator_stroke_color" format="color" />
+        <attr name="circle_indicator_stroke_width" format="dimension" />
+        <attr name="circle_indicator_fill_color" format="color" />
+        <attr name="circle_indicator_radius" format="dimension" />
+        <attr name="circle_indicator_space" format="dimension" />
+        <attr name="circle_indicator_indicator_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LinePagerIndicator">
+        <attr name="line_indicator_centerHorizontal" format="boolean" />
+        <attr name="line_indicator_line_width" format="dimension" />
+        <attr name="line_indicator_line_height" format="dimension" />
+        <attr name="line_indicator_indicator_height" format="dimension" />
+        <attr name="line_indicator_space" format="dimension" />
+        <attr name="line_indicator_fill_color" format="color" />
+        <attr name="line_indicator_indicator_color" format="color" />
+        <attr name="line_indicator_follow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr  name="verticalSpace" format="dimension"/>
+        <attr  name="horizontalSpace" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TSSwitchButton">
+        <attr  name="switch_border_width" format="dimension">
+        </attr>
+        <attr name="offBorderColor"  format="reference|color">
+        </attr>
+        <attr name="offColor" format="reference|color">
+        </attr>
+        <attr name="onColor" format="reference|color">
+        </attr>
+        <attr name="spotColor" format="reference|color">
+        </attr>
+    </declare-styleable>
+
+
+</resources>

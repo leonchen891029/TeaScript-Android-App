@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               style="@style/match_wrap"
+               android:background="@drawable/item_bg_selector"
+               android:padding="@dimen/space_8">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/user_av"
+        style="@style/user_face_image"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_8"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/wrap_wrap"
+        android:layout_marginBottom="@dimen/space_2"
+        android:layout_toRightOf="@id/user_av"
+        android:textColor="@color/lightblue"
+        android:textSize="@dimen/text_size_14"
+        android:text="帆酱"/>
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/wrap_wrap"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/text_size_12"
+        android:text="2017-11-11 11:11"/>
+
+    <TextView
+        android:id="@+id/action_tv"
+        style="@style/wrap_wrap"
+        android:layout_below="@id/name_tv"
+        android:layout_toRightOf="@id/user_av"
+        android:layout_marginRight="@dimen/space_10"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/text_size_12"
+        android:text="赞了我的动弹"/>
+
+    <LinearLayout
+        android:id="@+id/reply_ll"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_below="@id/action_tv"
+        android:layout_toRightOf="@id/user_av"
+        android:background="?attr/comment_reply_container_bg">
+
+        <com.teacore.teascript.widget.TeatimeTextView
+            android:id="@+id/reply_ttv"
+            style="@style/match_wrap"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_4"
+            android:textColor="@color/main_gray"
+            android:textSize="@dimen/text_size_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/from_tv"
+        style="@style/wrap_wrap"
+        android:layout_below="@id/reply_ll"
+        android:layout_toRightOf="@id/user_av"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_10"
+        android:drawableLeft="@drawable/platform"
+        android:drawablePadding="@dimen/space_5"
+        android:gravity="center_vertical"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/text_size_12"
+        android:text="Android"/>
+
+</RelativeLayout>

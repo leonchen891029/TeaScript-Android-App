@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/layout_item_bg">
+
+    <ScrollView
+        style="@style/match_match">
+
+        <LinearLayout
+            android:id="@+id/rootview"
+            style="@style/match_wrap"
+            android:orientation="vertical">
+
+            <include layout="@layout/fragment_my_information_head" />
+
+            <LinearLayout
+                style="@style/match_match"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/message_ll"
+                    style="@style/option_item_ll"
+                    android:background="@drawable/item_list_selector">
+                    
+                    <ImageView
+                       style="@style/option_item_img"
+                       android:background="@drawable/icon_my_message"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/message" />
+
+                    <TextView
+                        android:id="@+id/message_tv"
+                        style="@style/wrap_wrap"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:gravity="right" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/list_divider_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/match_match"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/blog_ll"
+                    style="@style/option_item_ll"
+                    android:background="@drawable/item_list_selector">
+
+                    <ImageView
+                        style="@style/option_item_img"
+                        android:background="@drawable/icon_my_blog"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/blog" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/match_match"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/team_ll"
+                    style="@style/option_item_ll"
+                    android:background="@drawable/item_list_selector">
+
+                    <ImageView
+                        style="@style/option_item_img"
+                        android:background="@drawable/icon_my_team"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/team" />
+                </LinearLayout>
+
+                <View
+                    style="@style/h_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/list_divider_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/event_ll"
+                style="@style/option_item_ll"
+                android:background="@drawable/item_list_selector">
+
+                <ImageView
+                    style="@style/option_item_img"
+                    android:background="@drawable/icon_my_event"/>
+
+                <TextView
+                    style="@style/option_item_text"
+                    android:text="@string/actionbar_title_my_event" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/h_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="1px"
+                android:layout_marginLeft="14dp"
+                android:background="@color/list_divider_color" />
+
+            <LinearLayout
+                android:id="@+id/note_ll"
+                style="@style/option_item_ll"
+                android:background="@drawable/item_list_selector"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/option_item_img"
+                    android:background="@drawable/icon_my_note"/>
+
+                <TextView
+                    style="@style/option_item_text"
+                    android:text="@string/my_note" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feedback_ll"
+                style="@style/option_item_ll"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/item_list_selector">
+
+                <ImageView
+                    style="@style/option_item_img"
+                    android:background="@drawable/icon_feedback"/>
+
+                <TextView
+                    style="@style/option_item_text"
+                    android:text="@string/feedback" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/match_match"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View
+                    style="@style/h_line"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/list_divider_color" />
+
+                <LinearLayout
+                    android:id="@+id/setting_ll"
+                    style="@style/option_item_ll"
+                    android:background="@drawable/item_list_selector">
+
+                    <ImageView
+                        style="@style/option_item_img"
+                        android:background="@drawable/icon_setting"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/actionbar_title_setting" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        style="@style/match_match"
+        android:visibility="gone"/>
+
+</FrameLayout>

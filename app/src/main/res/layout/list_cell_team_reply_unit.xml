@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:padding="4dp"
+              android:orientation="vertical"
+              android:background="?attr/layout_item_bg">
+    <com.teacore.teascript.widget.AvatarView
+        style="@style/comment_user_face_image"
+        android:id="@+id/avatar_av"
+        android:layout_marginRight="@dimen/space_10"/>
+
+    <com.teacore.teascript.widget.TeatimeTextView
+        style="@style/wrap_wrap"
+        android:id="@+id/content_ttv"
+        android:layout_toRightOf="@id/avatar_av"
+        android:text="评论内容"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/text_size_14"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/list_text_info"
+        android:layout_toRightOf="@id/avatar_av"
+        android:text="leon"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/content_ttv"/>
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/list_text_info"
+        android:layout_toRightOf="@id/name_tv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/content_ttv"
+        android:text="时间" />
+
+    <TextView
+        android:id="@+id/from_tv"
+        style="@style/list_text_info"
+        android:layout_below="@id/content_ttv"
+        android:layout_toRightOf="@id/time_tv"
+        android:gravity="center_vertical"
+        android:text="android"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

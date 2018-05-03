@@ -1,0 +1,371 @@
+<resources>
+    <string name="app_name">TeaScript</string>
+    <string name="app_intro">首次进入App的介绍界面</string>
+
+
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+
+     <!--BaseListAdapter-->
+     <string name="loading">加载中</string>
+     <string name="loading_no_more">已经加载全部</string>
+     <string name="error_view_no_data">暂无内容</string>
+     <string name="copy_success">复制成功!</string>
+
+     <!--emptylayout-->
+     <string name="error_view_loading">加载中</string>
+     <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+     <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+
+     <!--LoginActivity-->
+     <string name="login">登录</string>
+     <string name="progress_login">正在登录…</string>
+
+     <!--DetailActivity-->
+     <string name="actionbar_title_detail">详情</string>
+     <string name="actionbar_title_news">资讯详情</string>
+     <string name="actionbar_title_comment">评论列表</string>
+     <string name="actionbar_title_blog">博客详情</string>
+     <string name="actionbar_title_software">软件详情</string>
+     <string name="actionbar_title_question">帖子详情</string>
+     <string name="actionbar_title_teatime_detail">Teatime详情</string>
+     <string name="actionbar_title_user_blog">用户博客列表</string>
+     <string name="actionbar_title_active">好友圈</string>
+     <string name="actionbar_title_event_detail">活动详情</string>
+     <string name="actionbar_title_message">消息中心</string>
+     <string name="actionbar_title_ossoftware">开源软件</string>
+    <string name="actionbar_title_my_friends">关注/粉丝</string>
+    <string name="actionbar_title_question_tag">%s相关</string>
+    <string name="actionbar_title_chat_message">对话</string>
+    <string name="actionbar_title_user_favorite">用户收藏</string>
+    <string name="actionbar_title_setting">设置</string>
+    <string name="actionbar_title_setting_notification">新消息提醒</string>
+    <string name="actionbar_title_about_teascript">关于TeaScript</string>
+    <string name="actionbar_title_blog_area">博客区</string>
+    <string name="actionbar_title_voice_teatime">语音Teatime</string>
+    <string name="actionbar_title_event_apply">活动出席人员</string>
+    <string name="actionbar_title_same_city">同城</string>
+    <string name="actionbar_title_note">便签</string>
+    <string name="actionbar_title_noteedit">编辑便签</string>
+    <string name="actionbar_title_my_event">我的活动</string>
+    <string name="actionbar_title_feedback">用户反馈</string>
+    <string name="actionbar_title_team_member_information">用户主页</string>
+    <string name="actionbar_title_team_project">团队项目</string>
+    <string name="actionbar_title_team_my_issue">我的团队任务</string>
+    <string name="actionbar_title_team_issue">团队任务</string>
+    <string name="actionbar_title_team_discuss">团队讨论</string>
+    <string name="actionbar_title_team_actvie">团队动态</string>
+    <string name="actionbar_title_soft_teatime">软件teatime列表</string>
+    <string name="actionbar_title_team_diary">团队周报</string>
+    <string name="actionbar_title_team_diary_detail">周报详情</string>
+    <string name="actionbar_title_teatime_like_user">赞过该Teatime的人</string>
+    <string name="actionbar_title_teatime">Teatime列表</string>
+    <string name="team_issue_detail">任务详情</string>
+    <string name="actionbar_dynamic_detail">动态内容</string>
+    <string name="team_diary_detail">周报详情</string>
+
+
+    <!--PreviewImageActivity-->
+    <string name="tip_save_image_success">图片已保存</string>
+
+     <!--Comment-->
+     <string name="comment_publish_success">评论成功</string>
+     <string name="comment_publish_faile">评论失败</string>
+     <string name="post_answer">回复</string>
+    <string name="comment_reply_count">---共有%d条回复---</string>
+    <string name="tip_comment_content_empty">评论内容不能为空</string>
+    <string name="progress_submit">正在提交…</string>
+    <string name="comment_empty">没有评论</string>
+    <string name="comment_blog">发布评论</string>
+    <!--platform-->
+    <string name="from_web">网页</string>
+    <string name="from_mobile">手机</string>
+    <string name="from_android">Android</string>
+    <string name="from_iphone">iPhone</string>
+    <string name="from_windows_phone">Windows Phone</string>
+    <string name="from_wechat">微信</string>
+
+    <!--delete-->
+    <string name="deleting">正在删除…</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_fail">删除失败</string>
+
+    <string name="copy">复制</string>
+    <string name="delete">删除</string>
+
+    <!--Internet-->
+    <string name="tip_no_internet">网络不可用，请检查网络设置</string>
+    <string name="tip_network_error">没有可用的网络</string>
+    <string name="unlogin_tip">您还未登录\r\n或网络延迟</string>
+
+    <!--Recorder-->
+    <string name="record_sound_short">录音时间太短！</string>
+    <string name="record_sound_notfound">要播放的音频文件未找到</string>
+
+    <!--event-->
+    <string name="event_start_time">开始：%s</string>
+    <string name="event_end_time">结束：%s</string>
+    <string name="event_location">位置：%s</string>
+
+    <!--font_awsome-->
+    <string name="fa_plus">\uf067</string>
+    <string name="fa_user">\uf007</string>
+    <string name="fa_users">\uf0c0</string>
+    <string name="fa_trello">\uf181</string>
+    <string name="fa_tags">\uf02c</string>
+    <string name="fa_paperclip">\uf0c6</string>
+    <string name="fa_circle_o">\uf10c</string>
+    <string name="fa_dot_circle_o">\uf192</string>
+    <string name="fa_check_circle_o">\uf05d</string>
+    <string name="fa_lock_use">\uf023</string>
+    <string name="fa_thumbs_o_up">\uf087</string>
+    <string name="fa_calendar">\uf073</string>
+    <string name="fa_link">\uf0c1</string>
+    <string name="fa_team">\uf05a</string>
+    <string name="fa_gitosc">\uf1d2</string>
+    <string name="fa_github">\uf092</string>
+    <string name="fa_home">\uf015</string>
+    <string name="fa_inbox">\uf01c</string>
+    <string name="fa_tasks">\uf0ae</string>
+    <string name="fa_comments">\uf086</string>
+    <string name="fa_file_text_o">\uf0f6</string>
+    <string name="fa_clock_o">\uf017</string>
+    <string name="fa_list_alt">\uf022</string>
+
+    <!--team-->
+    <string name="team_new_issue">新团队任务</string>
+    <string name="team_new_active">新团队动弹</string>
+    <string name="team_empty_issue">还没有任务哦\n去其他地方看看呗</string>
+    <string name="team_empty">还没有加入的团队\n到team上加入一个牛逼的team呗</string>
+    <string name="team_actvie">团队动态</string>
+    <string name="team_project">团队项目</string>
+    <string name="team_issue">团队任务</string>
+    <string name="team_discuss">团队讨论</string>
+    <string name="team_diary">团队周报</string>
+    <string name="team_dynamic">团队动态</string>
+    <string name="team_project_empty_active">还没有项目动态\n</string>
+    <string name="team_project_empty_member">还没有项目成员\n去team上添加呗</string>
+    <string name="team_project_empty">还没有项目\n先去team上绑定项目呗</string>
+
+
+
+    <!--Teatime-->
+    <string name="teatime_hint">今天你动弹了吗?</string>
+    <string name="teatime_pub">发布动弹</string>
+    <string name="down_state">正在下载：%s</string>
+
+    <!--MyInformation-->
+    <string name="message">我的消息</string>
+    <string name="blog">我的博客</string>
+    <string name="team">我的团队</string>
+    <string name="my_note">我的便签</string>
+    <string name="feedback">反馈</string>
+    <string name="user_score">积分</string>
+    <string name="favorite">收藏</string>
+    <string name="following">关注</string>
+    <string name="follower">粉丝</string>
+    <string name="information">资料</string>
+    <string name="latest_login_time">最近登录  %s</string>
+    <string name="follow_each_other">取消互粉</string>
+    <string name="unfollow_user">取消关注</string>
+    <string name="follow_user">关注</string>
+    <string name="join_time">加入时间:</string>
+    <string name="location">所在地区:</string>
+    <string name="development_platform">开发平台:</string>
+    <string name="academic_focus">专长领域:</string>
+    <string name="tip_logout_success">注销成功</string>
+    <string name="permissions_camera_error">相机无法完成初始化,请正确授权。</string>
+    <string name="permissions_request_camera">请求获取相机权限</string>
+
+    <!--Qr Code-->
+    <string name="qr_code_tip">扫一扫上面的二维码，加我为好友</string>
+    <string name="qr_code_tip2">(长按保存到本地)</string>
+
+    <!--Error-->
+    <string name="my_information_unlogin_tips">未登录</string>
+
+    <!--MainActivity-->
+    <string name="main_tab_name_news">综合</string>
+    <string name="main_tab_name_teascript">TeaScript</string>
+    <string name="main_tab_name_teatime">Teatime</string>
+    <string name="main_tab_name_explore">发现</string>
+    <string name="main_tab_name_quick">快速</string>
+    <string name="main_tab_name_my">我的</string>
+
+    <string name="you_have_news_messages">你有%d条最新消息</string>
+    <string name="atme_count">\@我(%d) </string>
+    <string name="msg_count">私信(%d) </string>
+    <string name="comment_count">评论(%d) </string>
+    <string name="fans_count">新粉丝(%d) </string>
+    <string name="like_count">收到赞(%d) </string>
+
+    <string name="actionbar_title_search">搜索</string>
+    <string name="tip_exit">再次点击退出TeaScript App</string>
+
+    <!--Explore Fragment-->
+    <string name="find_people">找人</string>
+    <string name="same_city">同城</string>
+    <string name="scan">扫一扫</string>
+    <string name="shake">摇一摇</string>
+
+    <!--improve baselistfragment-->
+    <string name="footer_type_loading">正在加载中…</string>
+    <string name="footer_type_net_error">网络错误</string>
+    <string name="footer_type_error">加载失败</string>
+    <string name="footer_type_not_more">没有更多数据</string>
+
+    <!--improve blog-->
+    <string name="blog_list_title_lately">最近</string>
+    <string name="blog_list_title_heat">最热</string>
+
+    <!--improve event-->
+    <string name="event_status_end">活动结束</string>
+    <string name="event_status_ing">正在报名</string>
+    <string name="event_status_dfr">截止报名</string>
+    <string name="tssite">官网</string>
+    ><string name="event_type_teascript">茶花会</string>
+    <string name="event_type_tec">技术交流</string>
+    <string name="event_type_other">其他</string>
+    <string name="event_type_outside">站外活动</string>
+
+    <!--quick option-->
+    <string name="quick_option_text">文字</string>
+    <string name="quick_option_album">相册</string>
+    <string name="quick_option_photo">拍照</string>
+    <string name="quick_option_voice">语音</string>
+    <string name="quick_option_scan">扫一扫</string>
+    <string name="quick_option_software">开源软件</string>
+    <string name="quick_option_find">找人</string>
+    <string name="quick_option_city">同城</string>
+    <string name="quick_option_shake">摇一摇</string>
+    <string name="quick_option_note">便签</string>
+
+    <!--share dialog-->
+    <string name="platform_wechat_circle">朋友圈</string>
+    <string name="platform_wechat">微信</string>
+    <string name="platform_sinaweibo">新浪微博</string>
+    <string name="platform_qq">QQ</string>
+    <string name="platform_copy_link">复制链接</string>
+    <string name="platform_more_option">更多</string>
+
+    <!--TeatimePubActivity-->
+    <string name="tip_content_empty">内容不能为空</string>
+    <string name="tip_content_too_long">内容太长</string>
+
+    <!--TaskService-->
+    <string name="teatime_publish_success">动弹发布成功</string>
+    <string name="teatime_public">发布动弹</string>
+    <string name="teatime_publish_faile">发布动弹失败</string>
+    <string name="comment_publishing">正在发布你的评论…</string>
+    <string name="teatime_publishing">正在发布你的动弹…</string>
+
+    <!--SelectFriendsActivity-->
+    <string name="select_friends_noresult">无结果</string>
+    <string name="select_friends_search">搜索</string>
+    <string name="select_friends_empty">暂无好友</string>
+    <string name="select_friends_max_tips">最多只能选%1$d个好友哦</string>
+    <string name="pub_teatime_required_album_tip">在设置-应用-TeaScript权限中允许访问你设备上的照片，以正常使用发动弹功能</string>
+    <string name="pub_teatime_required_camera_tip">在设置-应用-TeaScript权限中允许拍摄照片，以正常使用发动弹功能</string>
+
+    <!--detailactivity-->
+    <string name="share_to">分享到</string>
+
+    <!--reportdialog-->
+    <string name="report_link">链接地址</string>
+    <string name="report_reason">举报原因</string>
+    <string name="other_reason">其他原因</string>
+    <string name="report">举报</string>
+    <string name="tip_report_success">举报成功</string>
+    <string name="tip_report_fail">举报失败</string>
+
+    <!--improve NewsDetailActivity-->
+    <string name="del_favorite_fail">取消收藏失败</string>
+    <string name="add_favorite_fail">收藏失败</string>
+    <string name="add_favorite_success">收藏成功</string>
+    <string name="del_favorite_success">已取消收藏</string>
+    <string name="follow_fail">关注失败</string>
+    <string name="del_follow_success">取消关注成功</string>
+    <string name="add_follow_success">关注成功</string>
+    <string name="apply_success">报名成功</string>
+
+    <string name="comments_list">评论列表</string>
+
+    <!--network-->
+    <string name="state_network_error">网络错误</string>
+    <string name="state_loading">正在加载…</string>
+    <string name="state_no_more">没有更多的数据了</string>
+    <string name="state_refreshing">正在刷新</string>
+    <string name="state_load_error">加载失败</string>
+
+    <!--improve fragment blog detail-->
+    <string name="about_articles">相关文章</string>
+
+    <!--improve fragment event detail-->
+    <string name="event_is_fav">已收藏</string>
+    <string name="event_un_fav">收藏</string>
+    <string name="event_apply_status_unsign">我要报名</string>
+    <string name="event_apply_status_audit">审核中</string>
+    <string name="event_apply_status_confirmed">已确认</string>
+    <string name="event_apply_status_presented">已出席</string>
+    <string name="event_apply_status_canceled">已取消</string>
+    <string name="event_apply_status_refused">已拒绝</string>
+
+    <!--behavior-->
+    <string name="scrolling_auto_hide_behavior">com.teacore.teascript.module.general.behavior.ScrollingAutoHideBehavior</string>
+
+    <!--QuestionCommentDetailActivity-->
+    <string name="request_fail">请求失败</string>
+    <string name="vote_up">顶</string>
+    <string name="vote_down">踩</string>
+
+    <!--BackFragmentEnum-->
+    <string name="actionbar_title_questions">技术问答</string>
+    <string name="actionbar_title_teatimepub">闲茶一下</string>
+    <string name="actionbar_title_softteatime">软件闲聊</string>
+    <string name="actionbar_title_user_center">用户中心</string>
+    <string name="actionbar_title_my_information">我的资料</string>
+
+    <!--TeatimeDetailActivity-->
+    <string name="teatime_detail_data_null">啊噢, 没有找到该teatime~ 可能被主人删除了呢!</string>
+
+    <!--MessageAdapter-->
+    <string name="send_to">发给</string>
+    <string name="message_count">%d条私信</string>
+    <string name="confirm_delete_message">确定要删除和\"%s\"的所有私信吗?</string>
+    <string name="tip_delete_success">删除成功</string>
+    <string name="tip_delete_fail">无法删除</string>
+
+    <!--Setting-->
+    <string name="loading_img">加载图片</string>
+    <string name="message_notice">消息通知</string>
+    <string name="clean_cache">清理缓存</string>
+    <string name="clean_cache_mes">是否清空缓存?</string>
+    <string name="double_click_exit">双击退出</string>
+    <string name="loading_more">自动加载\"更多\"</string>
+    <string name="about_teascript" translatable="false">关于TeaScript</string>
+    <string name="exit" translatable="false">退出</string>
+    <string name="notice_accept">接收新通知</string>
+    <string name="notice_voice">声音</string>
+    <string name="notice_vibration">震动</string>
+    <string name="notice_app_exit">退出后不提醒</string>
+    <string name="update">检查新版本</string>
+    <string name="grade">去评分</string>
+    <string name="gitapp">Git客户端</string>
+    <string name="site">官网</string>
+    <string name="knowmore">了解更多</string>
+    <string name="copyright">Copyright © 2017 TeaScript.com All rights reserved.</string>
+    <string name="feedback_app_error">程序错误</string>
+    <string name="feedback_function_suggest">功能建议</string>
+    <string name="feedback_et_hint">我们将为您不断改进</string>
+    <string name="feedback_screenshot_descr">截图描述：（可选）</string>
+    <string name="tip_feedback">我们会仔细阅读您的反馈，并尽早给您回复。感谢您的理解与支持。</string>
+    <string name="feedback_submit">提交</string>
+
+    <!--Notebook-->
+    <string name="add_notebook">新建便签</string>
+    <string name="save_notebook">保存便签</string>
+
+    <string name="friend_home">查看对方资料</string>
+
+
+</resources>

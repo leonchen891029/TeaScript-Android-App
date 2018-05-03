@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:padding="@dimen/space_15"
+              android:background="?attr/layout_item_bg"
+              android:gravity="center|left"
+              android:orientation="horizontal">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/user_av"
+        style="@style/user_face_image"
+        android:layout_marginRight="@dimen/space_10"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/wrap_wrap"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold"
+        android:textColor="?attr/android:textColor"
+        android:text="用户名" />
+
+</LinearLayout>

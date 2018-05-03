@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48.0dp"
+    android:background="?attr/layout_item_bg">
+
+    <View android:layout_height="0.5dp"
+          android:layout_width="match_parent"
+          android:background="?attr/lineColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingRight="@dimen/space_8"
+            android:src="@drawable/toolbarfragment_btn_text_selector"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="?attr/lineColor" />
+
+        <FrameLayout
+            android:id="@+id/view_comment_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                style="@style/toolbar_action"
+                android:src="@drawable/toolbarfragment_action_comment_selector" />
+
+            <TextView
+                android:id="@+id/comment_count_tv"
+                style="@style/toolbar_action_comment"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/write_comment_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                style="@style/toolbar_action"
+                android:src="@drawable/toolbarfragment_action_write_selector" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/favorite_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:id="@+id/favorite_iv"
+                style="@style/toolbar_action"
+                android:src="@drawable/toolbarfragment_action_favorite_selector" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/share_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <ImageView
+                style="@style/toolbar_action"
+                android:src="@drawable/toolbarfragment_action_repost_selector" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/report_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/toolbar_action"
+                android:src="@drawable/toolbarfragment_action_report_selector" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

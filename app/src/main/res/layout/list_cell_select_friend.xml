@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:background="@drawable/item_bg_selector"
+              android:padding="@dimen/space_8">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/user_av"
+        style="@style/user_face_image"
+        android:layout_marginRight="@dimen/space_8"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/wrap_wrap"
+        android:layout_toRightOf="@id/user_av"
+        android:layout_centerVertical="true"
+        android:textColor="?attr/android:textColor"
+        android:textSize="@dimen/text_size_16"/>
+
+    <CheckBox
+        android:id="@+id/check_cb"
+        style="@style/wrap_wrap"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:checked="false"/>
+
+</RelativeLayout>

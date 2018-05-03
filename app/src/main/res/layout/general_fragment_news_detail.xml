@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/general_fragment_news_detail"
+    style="@style/match_match"
+    android:background="#f9f9f9">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/content_nsv"
+        style="@style/match_match"
+        android:layout_above="@+id/bottom_ll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:background="#fcfcfc"
+                android:gravity="center_vertical"
+                android:padding="@dimen/space_16"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.teacore.teascript.widget.AvatarView
+                    android:id="@+id/avatar_av"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/widget_dface"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/name_tv"
+                        style="@style/wrap_wrap"
+                        android:textColor="#111111"
+                        android:textSize="14sp"
+                        android:text="年轻的小蜜蜂" />
+
+                    <TextView
+                        android:id="@+id/pub_date_tv"
+                        style="@style/wrap_wrap"
+                        android:textColor="#6a6a6a"
+                        android:textSize="12sp"
+                        android:text="发表于1天前 (2016-06-24 20:12)" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/h_line"/>
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space_16"
+                android:paddingTop="@dimen/space_8"
+                android:paddingRight="@dimen/space_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    style="@style/match_wrap"
+                    android:layout_marginBottom="8dp"
+                    android:maxLines="2"
+                    android:text="从零开始"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+
+                <include
+                    android:id="@+id/info_see_comment_ll"
+                    layout="@layout/item_info_see_comment" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/webview_fl"
+                style="@style/match_match"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/space_16"
+                android:paddingRight="@dimen/space_16"
+                android:paddingBottom="@dimen/space_16"/>
+
+            <View style="@style/h_line" />
+
+            <LinearLayout
+                android:id="@+id/about_software_ll"
+                style="@style/match_wrap"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/wrap_wrap"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:text="相关软件"
+                    android:textColor="#6a6a6a"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/space_16"
+                    android:paddingTop="@dimen/space_8"
+                    android:paddingRight="@dimen/space_16"
+                    android:paddingBottom="@dimen/space_8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/about_software_title_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_16"
+                        android:layout_margin="@dimen/space_4"
+                        android:paddingRight="@dimen/space_16"
+                        android:maxLines="1"
+                        android:textColor="#111111"
+                        android:textSize="14sp"
+                        android:text="TeaScript666"/>
+                    
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="@dimen/space_16"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_arrow_right"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/h_line" />
+
+            <com.teacore.teascript.module.general.widget.AboutRecommendView
+                android:id="@+id/about_recommend_view"
+                style="@style/match_wrap"/>
+
+            <com.teacore.teascript.module.general.comment.CommentsView
+                android:id="@+id/comments_view"
+                style="@style/match_wrap" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        style="@style/match_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_8"
+        app:layout_anchor="@id/content_nsv"
+        app:layout_anchorGravity="bottom"
+        app:layout_behavior="@string/scrolling_auto_hide_behavior"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_marginBottom="@dimen/space_8"
+            android:background="@drawable/edit_bg_selector"
+            android:hint="发表评论"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingTop="@dimen/space_6"
+            android:paddingBottom="@dimen/space_6"
+            android:maxLines="1"
+            android:textSize="14sp"/>
+
+        <com.like.LikeButton
+            android:id="@+id/favorite_lb"
+            style="@style/wrap_match"
+            app:icon_type="star"
+            app:icon_size="@dimen/space_40"
+            app:liked="false"/>
+
+        <ImageView
+            android:id="@+id/share_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingRight="@dimen/space_16"
+            android:src="@drawable/icon_share_selector" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color"
+        app:layout_anchor="@id/bottom_ll"
+        app:layout_anchorGravity="top"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+</android.support.design.widget.CoordinatorLayout>

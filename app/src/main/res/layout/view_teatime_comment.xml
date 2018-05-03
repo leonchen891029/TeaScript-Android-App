@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:background="@drawable/item_bg_selector"
+              android:clickable="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginRight="@dimen/space_8"
+        android:orientation="horizontal">
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/user_av"
+            android:layout_width="@dimen/space_36"
+            android:layout_height="@dimen/space_36"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/widget_dface" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/wrap_wrap"
+                android:text="Leon"
+                android:textColor="#111111"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/pub_date_tv"
+                style="@style/wrap_wrap"
+                android:text="12楼 6分钟前"
+                android:textColor="#6a6a6a"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/comment_btn"
+            style="@style/wrap_match"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_8"
+            android:paddingBottom="@dimen/space_8"
+            android:src="@drawable/icon_comment" />
+    </LinearLayout>
+
+    <com.teacore.teascript.widget.TeatimeTextView
+        android:id="@+id/content_ttv"
+        style="@style/wrap_wrap"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_16"
+        android:lineSpacingExtra="4dp"
+        android:text="Leon 你好，我有一个想要问你？你有女朋友吗？"
+        android:textColor="#111111"
+        android:textSize="@dimen/text_size_14"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/space_16"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:background="@color/list_divider_color" />
+
+</LinearLayout>

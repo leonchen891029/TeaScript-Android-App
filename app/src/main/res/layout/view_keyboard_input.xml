@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/keyboard_input_ll"
+              style="@style/match_wrap"
+              android:layout_gravity="bottom"
+              android:background="#FFF"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/lineColor" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_16"
+            android:layout_marginBottom="@dimen/space_8"
+            android:background="@drawable/edit_bg_selector"
+            android:hint="发表评论"
+            android:maxLength="160"
+            android:maxLines="4"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingTop="@dimen/space_6"
+            android:paddingRight="@dimen/space_8"
+            android:paddingBottom="@dimen/space_6"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/emoji_iv"
+            style="@style/wrap_wrap"
+            android:layout_marginBottom="@dimen/space_12"
+            android:paddingRight="@dimen/space_16"
+            android:layout_gravity="bottom"
+            android:scaleType="fitCenter"
+            android:src="@drawable/emoji_btn_selector"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/bottom_ll"
+            style="@style/wrap_wrap"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/space_12"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pic_iv"
+                style="@style/wrap_wrap"
+                android:paddingRight="@dimen/space_16"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pic_btn_selector"
+                android:visibility="gone"/>
+
+
+            <ImageView
+                android:id="@+id/favorite_iv"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingRight="@dimen/space_16"
+                android:src="@drawable/icon_favor_selector"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/share_iv"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center"
+                android:paddingRight="@dimen/space_16"
+                android:src="@drawable/icon_share_selector"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginRight="@dimen/space_16"
+            android:background="@drawable/btn_blue_selector"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="发送"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/lineColor" />
+
+    <FrameLayout
+        android:id="@+id/emoji_keyboard_fl"
+        style="@style/match_wrap"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

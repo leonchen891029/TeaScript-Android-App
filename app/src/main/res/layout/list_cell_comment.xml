@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/avatar_iv"
+        style="@style/comment_user_face_image"
+        android:layout_marginRight="@dimen/space_10" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/avatar_iv"
+        android:textColor="?android:textColorLink"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_alignParentRight="true"
+        tools:text="刚刚"
+        style="@style/list_text_info" />
+
+    <net.oschina.app.widget.FloorView
+        android:id="@+id/refers_fv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_toRightOf="@id/avatar_iv"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <net.oschina.app.widget.TeatimeTextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/refers_fv"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_toRightOf="@id/avatar_iv"
+        tools:text="评论内容"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/relies_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_tv"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_toRightOf="@id/avatar_iv"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/from_tv"
+        android:layout_below="@id/relies_ll"
+        android:layout_marginTop="@dimen/space_8"
+        style="@style/list_text_info"
+        android:layout_toRightOf="@id/avatar_iv"
+        tools:text="Android"
+        android:drawablePadding="@dimen/space_4"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

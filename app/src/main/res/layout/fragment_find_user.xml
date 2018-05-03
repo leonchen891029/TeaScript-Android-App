@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/windows_bg"
+              android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/list_lv"
+        style="@style/match_wrap"
+        android:scrollingCache="true"
+        android:divider="?attr/lineColor"
+        android:visibility="gone" />
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        style="@style/match_match"
+        android:visibility="gone" />
+
+
+</LinearLayout>

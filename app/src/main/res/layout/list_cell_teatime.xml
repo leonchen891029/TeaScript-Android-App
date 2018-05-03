@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/match_wrap"
+              android:background="@drawable/item_bg_selector"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginRight="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_12"
+        android:orientation="horizontal">
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/teatime_av"
+            android:layout_width="@dimen/space_48"
+            android:layout_height="@dimen/space_48"
+            android:clickable="true"
+            android:src="@drawable/widget_dface"/>
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_marginLeft="@dimen/space_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teatime_name_tv"
+                style="@style/match_wrap"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="Large Text"/>
+
+            <com.teacore.teascript.widget.TeatimeTextView
+                android:id="@+id/teatime_content_ttv"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/space_8"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/space_4"
+                android:textColor="?attr/android:textColor"
+                android:textSize="14sp"
+                tools:text="最近研究了这个项目，学习rx系列,修复了楼主的bug 主要原因在mainActivity里面资讯fragment的构建"/>
+
+            <ImageView
+                android:id="@+id/teatime_iv"
+                android:layout_width="@dimen/space_60"
+                android:layout_height="@dimen/space_60"
+                android:layout_marginTop="@dimen/space_8"
+                android:clickable="true"
+                android:maxHeight="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic_bg" />
+
+            <TextView
+                android:id="@+id/teatime_likeusers_tv"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/space_8"
+                android:textColor="?attr/infoTextColor"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="咪咪" />
+
+            <LinearLayout
+                android:id="@+id/info_ll"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/space_8"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/teatime_time_tv"
+                        style="@style/wrap_match"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textColor="#9d9d9d"
+                        android:textSize="@dimen/text_size_12"
+                        tools:text="6分钟" />
+
+                    <TextView
+                        android:id="@+id/teatime_platform_tv"
+                        style="@style/wrap_match"
+                        android:layout_marginLeft="@dimen/space_4"
+                        android:layout_marginRight="@dimen/space_4"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:textColor="#9d9d9d"
+                        android:textSize="@dimen/text_size_12"
+                        tools:text="iPhone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/wrap_wrap"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/teatime_likestate_iv"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="@dimen/space_4"
+                        android:clickable="true"
+                        android:padding="@dimen/space_4"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_thumbup_normal"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/teatime_like_count_tv"
+                        style="@style/wrap_match"
+                        android:gravity="center_vertical"
+                        android:textColor="#9d9d9d"
+                        android:textSize="@dimen/text_size_12"
+                        tools:text="12" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:padding="@dimen/space_4"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_comment" />
+
+                    <TextView
+                        android:id="@+id/teatime_comment_count_tv"
+                        style="@style/wrap_match"
+                        android:gravity="center_vertical"
+                        android:textColor="#9d9d9d"
+                        android:textSize="@dimen/text_size_12"
+                        tools:text="12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/h_line"
+        android:layout_marginLeft="16dp" />
+
+
+</LinearLayout>

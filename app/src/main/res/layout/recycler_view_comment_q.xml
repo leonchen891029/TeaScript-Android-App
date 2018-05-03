@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:background="@drawable/item_blog_about_bg_selector"
+              android:paddingLeft="16dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/user_av"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/widget_dface" />
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginLeft="8dp"
+                      android:layout_marginRight="8dp"
+                      android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/wrap_wrap"
+                android:text="leon"
+                android:textColor="#111111"
+                android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                android:id="@+id/date_tv"
+                style="@style/wrap_wrap"
+                android:text="1楼 5分钟前"
+                android:textColor="#6a6a6a"
+                android:textSize="@dimen/text_size_12"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/comment_btn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="@dimen/space_16"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_comment_30"/>
+        
+        <ImageView 
+            android:id="@id/best_answer_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/label_best_answer"
+            android:visibility="gone" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/comments_ll"
+        style="@style/match_wrap"
+        android:orientation="vertical"/>
+    
+    <com.teacore.teascript.widget.TeatimeTextView
+        android:id="@+id/content_ttv"
+        style="@style/wrap_wrap"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:paddingRight="16sp"
+        android:text="K,Why you so diao?"
+        android:textColor="#111111"
+        android:textSize="@dimen/text_size_14"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="@color/list_divider_color" />
+
+</LinearLayout>

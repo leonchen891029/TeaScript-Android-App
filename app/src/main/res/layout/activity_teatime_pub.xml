@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/windows_bg"
+              android:orientation="vertical">
+    
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="top|left"
+        android:hint="@string/teatime_hint"
+        android:padding="@dimen/space_12"
+        android:textColor="?android:editTextColor"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_rl"
+        style="@style/match_wrap"
+        android:gravity="bottom"
+        android:padding="@dimen/space_8">
+
+        <RelativeLayout
+            android:id="@+id/img_rl"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/img_iv"
+                style="@style/match_match"
+                android:layout_marginTop="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:background="@color/light_gray"
+                android:clickable="true"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/clear_iv"
+                style="@style/wrap_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_clear_image_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/clear_tv"
+            style="@style/wrap_wrap"
+            android:layout_alignBottom="@id/img_rl"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icon_clear_compose_selector"
+            android:clickable="true"
+            android:text="120"
+            android:gravity="center_vertical"
+            android:textColor="?attr/android:textColor"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <View style="@style/h_line"/>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/picture_ib"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="@dimen/space_8"
+            android:src="@drawable/icon_toolbar_picture_pressed"/>
+
+        <ImageButton
+            android:id="@+id/mention_ib"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="@dimen/space_8"
+            android:src="@drawable/icon_toolbar_mention_selector"/>
+
+        <ImageButton
+            android:id="@+id/trend_software_ib"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="@dimen/space_8"
+            android:src="@drawable/icon_toolbar_trend_selector"/>
+
+        <ImageButton
+            android:id="@+id/emoji_keybord_ib"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="@dimen/space_8"
+            android:src="@drawable/icon_toolbar_emoji_selector"/>
+
+    </LinearLayout>
+
+    <View style="@style/h_line"/>
+
+    <FrameLayout
+        android:id="@+id/emoji_keyboard_fragment"
+        style="@style/match_wrap"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

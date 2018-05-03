@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:paddingLeft="@dimen/space_16"
+              android:background="@drawable/item_bg_selector"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_8"
+        android:orientation="horizontal">
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/user_av"
+            android:layout_width="@dimen/space_36"
+            android:layout_height="@dimen/space_36"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/widget_dface"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/wrap_wrap"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:text="DOOM"/>
+
+            <TextView
+                android:id="@+id/pub_date_tv"
+                style="@style/wrap_wrap"
+                android:textColor="#6a6a6a"
+                android:textSize="12sp"
+                android:text="12楼  6分钟前"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thumbup_count_tv"
+            style="@style/wrap_wrap"
+            android:text="8"/>
+
+        <ImageView
+            android:id="@+id/thumbup_btn"
+            android:layout_width="@dimen/space_16"
+            android:layout_height="@dimen/space_16"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginRight="@dimen/space_16"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_thumbup_normal"/>
+
+        <ImageView
+            android:id="@+id/comment_btn"
+            android:layout_width="@dimen/space_16"
+            android:layout_height="@dimen/space_16"
+            android:layout_marginRight="@dimen/space_16"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_comment"/>
+
+        <ImageView
+            android:id="@+id/best_answer_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_16"
+            android:scaleType="fitEnd"
+            android:src="@drawable/label_best_answer"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/refers_ll"
+        style="@style/match_wrap"
+        android:orientation="vertical"/>
+
+    <com.teacore.teascript.widget.TeatimeTextView
+        android:id="@+id/content_ttv"
+        style="@style/wrap_wrap"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_marginBottom="@dimen/space_4"
+        android:paddingRight="@dimen/space_16"
+        android:textColor="#111111"
+        android:textSize="14sp"
+        android:text="leon 你好，想跟你请教个问题：TeaScript这么吊，为什么比赛的时候我看不到"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="@color/list_divider_color"/>
+
+</LinearLayout>

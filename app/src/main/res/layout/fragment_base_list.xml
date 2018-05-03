@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/layout_item_bg">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        style="@style/match_match"
+        android:visibility="visible" >
+
+        <ListView
+            android:id="@+id/listview"
+            style="@style/match_match"
+            android:divider="?attr/lineColor"
+            android:listSelector="@color/transparent"
+            android:dividerHeight="1px"
+            android:scrollbars="none"
+            android:scrollingCache="true" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        style="@style/match_match"
+        android:visibility="visible" />
+
+</RelativeLayout>

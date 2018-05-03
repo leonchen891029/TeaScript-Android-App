@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/white"
+                android:minHeight="130dp">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_vp"
+        style="@style/match_match" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/banner_linear_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/news_title_tv"
+            style="@style/wrap_wrap"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="峰哥牛逼!"
+            android:textColor="@color/white" />
+
+        <com.teacore.teascript.widget.indicator.CirclePagerIndicator
+            android:id="@+id/news_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            app:circle_indicator_centerHorizontal="true"
+            app:circle_indicator_color="@color/white"
+            app:circle_indicator_fill_color="@color/white"
+            app:circle_indicator_indicator_radius="3dp"
+            app:circle_indicator_radius="2dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

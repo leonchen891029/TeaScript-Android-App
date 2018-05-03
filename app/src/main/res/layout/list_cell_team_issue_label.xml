@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          style="@style/wrap_wrap"
+          android:text="BUG"
+          android:layout_margin="2dp"
+          android:padding="3dp"
+          android:background="@drawable/team_issue_label_bg"
+          android:textColor="@color/main_gray"
+          android:textSize="10sp" />

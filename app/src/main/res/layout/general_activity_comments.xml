@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/general_activity_comments_cl"
+    style="@style/match_match"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:background="@color/main_green"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_16">
+
+            <TextView
+                android:id="@+id/back_tv"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:drawableLeft="@drawable/back_normal_btn"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18"/>
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/space_4"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/comments_list"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"/>
+
+            <Space
+                android:layout_width="56dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <com.teacore.teascript.module.general.widget.RecyclerRefreshLayout
+            android:id="@+id/comments_rrl"
+            style="@style/match_match"
+            android:background="#FFF"
+            android:paddingBottom="@dimen/space_48"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comments_rv"
+                style="@style/match_match"/>
+
+        </com.teacore.teascript.module.general.widget.RecyclerRefreshLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

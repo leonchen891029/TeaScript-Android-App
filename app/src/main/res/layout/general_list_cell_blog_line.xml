@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/blog_banner_tv"
+        style="@style/wrap_wrap"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_marginBottom="@dimen/space_8"
+        android:textColor="@color/ques_bt_text_color_dark"
+        android:textSize="16sp"
+        android:text="@string/blog_list_title_lately"/>
+
+    <View
+        android:id="@+id/blog_line_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginBottom="1px"
+        android:background="@color/list_divider_color"/>
+
+
+</LinearLayout>

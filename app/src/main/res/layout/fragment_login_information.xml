@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/match_match"
+              android:background="?attr/windows_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="116sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/bg_user"
+        android:orientation="vertical">
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/user_av"
+            style="@style/user_face_image"
+            app:border_width="@dimen/space_2"
+            app:border_color="@color/white"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/wrap_wrap"
+            android:layout_marginTop="@dimen/space_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:text="帆酱"/>
+
+    </LinearLayout>
+
+    <View style="@style/h_line" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:background="?attr/layout_item_bg"
+        android:clickable="true"
+        android:padding="@dimen/space_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:layout_marginLeft="@dimen/space_4"
+            android:textColor="?attr/infoTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/join_time"/>
+
+        <TextView
+            android:id="@+id/join_time_tv"
+            style="@style/wrap_wrap"
+            android:textColor="?attr/android:textColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="2017-11-11"/>
+
+    </LinearLayout>
+
+    <View style="@style/h_line" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:background="?attr/layout_item_bg"
+        android:clickable="true"
+        android:padding="@dimen/space_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:layout_marginLeft="@dimen/space_4"
+            android:textColor="?attr/infoTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/location"/>
+
+        <TextView
+            android:id="@+id/location_tv"
+            style="@style/wrap_wrap"
+            android:textColor="?attr/android:textColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="上海 闵行"/>
+
+    </LinearLayout>
+
+    <View style="@style/h_line" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:background="?attr/layout_item_bg"
+        android:clickable="true"
+        android:padding="@dimen/space_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:layout_marginLeft="@dimen/space_4"
+            android:textColor="?attr/infoTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/development_platform"/>
+
+        <TextView
+            android:id="@+id/development_platform_tv"
+            style="@style/wrap_wrap"
+            android:textColor="?attr/android:textColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="Android"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:background="?attr/layout_item_bg"
+        android:clickable="true"
+        android:padding="@dimen/space_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:layout_marginLeft="@dimen/space_4"
+            android:textColor="?attr/infoTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/academic_focus"/>
+
+        <TextView
+            android:id="@+id/academic_focus_tv"
+            style="@style/wrap_wrap"
+            android:textColor="?attr/android:textColor"
+            android:textSize="@dimen/text_size_16"
+            android:text="Java"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_btn"
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/space_28"
+        android:layout_marginTop="@dimen/space_28"
+        android:layout_marginRight="@dimen/space_28"
+        android:padding="@dimen/space_10"
+        android:background="@drawable/btn_red_selector"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/white"
+        android:text="注销账号"/>
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"/>
+
+</LinearLayout>

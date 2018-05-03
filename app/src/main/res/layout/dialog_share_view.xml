@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:padding="@dimen/space_16"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/share_wechat_circle_ll"
+            style="@style/dialog_content_share_ll">
+            <TextView
+                style="@style/dialog_content_share_text"
+                android:drawableTop="@drawable/share_wechatfriends_icon_selector"
+                android:text="@string/platform_wechat_circle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_wechat_ll"
+            style="@style/dialog_content_share_ll">
+            <TextView
+                style="@style/dialog_content_share_text"
+                android:drawableTop="@drawable/share_wechat_icon_selector"
+                android:text="@string/platform_wechat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_sina_weibo_ll"
+            style="@style/dialog_content_share_ll">
+            <TextView
+                style="@style/dialog_content_share_text"
+                android:drawableTop="@drawable/share_sinaweibo_icon_selector"
+                android:text="@string/platform_sinaweibo"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/space_16"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/share_qq_ll"
+            style="@style/dialog_content_share_ll" >
+
+            <TextView
+                style="@style/dialog_content_share_text"
+                android:drawableTop="@drawable/share_qq_icon_selector"
+                android:text="@string/platform_qq" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_copy_link_ll"
+            style="@style/dialog_content_share_ll" >
+
+            <TextView
+                style="@style/dialog_content_share_text"
+                android:drawableTop="@drawable/share_copy_icon_selector"
+                android:text="@string/platform_copy_link" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_more_option_ll"
+            style="@style/dialog_content_share_ll" >
+
+            <TextView
+                style="@style/dialog_content_share_text"
+                android:drawableTop="@drawable/share_more_icon_selector"
+                android:text="@string/platform_more_option" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/name_tv"
+          style="@style/match_wrap"
+          android:gravity="center_vertical"
+          android:minHeight="?android:attr/listPreferredItemHeightSmall"
+          android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+          android:text="TeaScript"
+          android:paddingLeft="5dp"
+          android:textColor="@color/white"
+          android:textSize="@dimen/text_size_18"
+          android:paddingStart="?android:attr/listPreferredItemPaddingStart"/>

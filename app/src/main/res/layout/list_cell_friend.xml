@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/match_wrap"
+                android:background="?attr/layout_item_bg"
+                android:padding="@dimen/space_8">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/user_av"
+        style="@style/user_face_image"
+        android:layout_marginRight="@dimen/space_8" />
+
+    <LinearLayout
+        android:id="@+id/top_ll"
+        style="@style/wrap_wrap"
+        android:layout_toRightOf="@id/avatar_av"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/wrap_wrap"
+            android:textColor="?android:textColorLink"
+            android:textSize="@dimen/text_size_16"
+            android:text="leon"/>
+
+        <ImageView
+            android:id="@+id/gender_iv"
+            style="@style/wrap_wrap"
+            android:layout_marginLeft="@dimen/space_4"
+            android:src="@drawable/icon_userinfo_male" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/from_tv"
+        style="@style/wrap_wrap"
+        android:layout_below="@id/top_ll"
+        android:layout_marginTop="@dimen/space_2"
+        android:layout_toRightOf="@id/avatar_av"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/text_size_12"
+        android:text="hulala"/>
+
+    <TextView
+        android:id="@+id/description_tv"
+        style="@style/wrap_wrap"
+        android:layout_below="@id/from_tv"
+        android:layout_marginTop="@dimen/space_2"
+        android:layout_toRightOf="@id/avatar_av"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/text_size_12"
+        android:text="Nono"/>
+
+</RelativeLayout>

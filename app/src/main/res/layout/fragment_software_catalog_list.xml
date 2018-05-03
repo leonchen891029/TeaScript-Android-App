@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match">
+
+    <com.teacore.teascript.widget.SwitchLayout
+        android:id="@+id/switchlayout"
+        style="@style/match_match" >
+
+        <ListView
+            android:id="@+id/catalog_lv"
+            style="@style/match_match"
+            android:cacheColorHint="#ffffffff"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="?attr/lineColor"
+            android:dividerHeight="1.0px"
+            android:listSelector="@android:color/transparent" />
+
+        <ListView
+            android:id="@+id/tag_lv"
+            style="@style/match_match"
+            android:cacheColorHint="#ffffffff"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="?attr/lineColor"
+            android:dividerHeight="1.0px"
+            android:listSelector="@android:color/transparent" />
+
+        <ListView
+            android:id="@+id/software_lv"
+            style="@style/match_match"
+            android:divider="?attr/lineColor"
+            android:scrollingCache="true" />
+
+    </com.teacore.teascript.widget.SwitchLayout>
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        style="@style/match_match"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_tv"
+        style="@style/match_wrap"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:text="TeaScript"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#acd4b3"
+        android:textSize="@dimen/text_size_18"/>
+
+</LinearLayout>

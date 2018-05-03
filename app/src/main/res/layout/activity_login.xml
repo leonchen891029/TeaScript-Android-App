@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="@color/teascript"
+        app:mtf_image="@drawable/icon_login_email">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="请输入您的邮箱"/>
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="@color/teascript"
+        app:mtf_image="@drawable/icon_login_password">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"/>
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_defaultColor="@color/teascript"
+        fancy:fb_fontIconResource="\uf007"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="登录"
+        fancy:fb_textColor="@color/white"
+        />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        fancy:fb_borderColor="@color/white"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_defaultColor="@color/teascript"
+        fancy:fb_fontIconResource="\uf015"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="注册"
+        fancy:fb_textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/qq_login_iv"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/umeng_socialize_qq_selector" />
+
+        <ImageView
+            android:id="@+id/wx_login_iv"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/umeng_socialize_wechat_selector" />
+
+        <ImageView
+            android:id="@+id/sina_login_iv"
+            android:layout_width="@dimen/space_40"
+            android:layout_height="@dimen/space_40"
+            android:background="@drawable/umeng_socialize_sina_selector" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

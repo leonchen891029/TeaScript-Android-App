@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:paddingLeft="@dimen/space_10"
+              android:paddingTop="@dimen/space_20"
+              android:paddingRight="@dimen/space_10"
+              android:orientation="vertical">
+
+    <RadioGroup
+        style="@style/match_wrap"
+        android:layout_marginRight="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/app_error_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_app_error"/>
+
+        <RadioButton
+            android:id="@+id/function_suggest_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_function_suggest"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/feedback_et"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/space_15"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_10"
+        android:background="@drawable/bg_edittext_selector"
+        android:gravity="top|left|center"
+        android:lines="3"
+        android:textColor="@color/text_color_account_info"
+        android:textColorHint="@color/edittext_hint_color"
+        android:textSize="@dimen/text_size_account_info"
+        android:hint="@string/feedback_et_hint"/>
+
+    <TextView
+        android:id="@+id/feedback_screenshot_descr"
+        style="@style/wrap_wrap"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_24"
+        android:maxLines="1"
+        android:textColor="@color/text_color_account_info"
+        android:textSize="@dimen/text_size_account_info"
+        android:text="@string/feedback_screenshot_descr"/>
+
+    <RelativeLayout
+        android:id="@+id/img_rl"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/img_add_iv"
+            style="@style/match_match"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:background="@color/light_gray"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:src="@drawable/image_add_selector"/>
+
+        <ImageView
+            android:id="@+id/img_clear_iv"
+            style="@style/wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_clear_image_selector"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_5"
+        android:shadowColor="#ffffffff"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="0.5"
+        android:text="@string/tip_feedback"
+        android:textColor="#ffa49e88"
+        android:textSize="@dimen/text_size_14"/>
+
+</LinearLayout>

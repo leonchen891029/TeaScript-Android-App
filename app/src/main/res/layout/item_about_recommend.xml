@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/match_wrap"
+                android:background="@drawable/item_bg_selector"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+    <ImageView
+        android:id="@+id/arrow_right_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_arrow_right" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/match_wrap"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@id/arrow_right_iv"
+        android:maxLines="1"
+        android:paddingRight="16dp"
+        android:textColor="#111111"
+        android:textSize="14sp"
+        android:text="我是天才！" />
+
+    <FrameLayout
+        android:id="@+id/include_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title_tv"
+        android:layout_toLeftOf="@id/arrow_right_iv">
+
+        <include
+            android:id="@+id/info_see_comment_ll"
+            layout="@layout/item_info_see_comment" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/include_fl"
+        android:layout_marginTop="16dp"
+        android:background="@color/list_divider_color" />
+
+</RelativeLayout>

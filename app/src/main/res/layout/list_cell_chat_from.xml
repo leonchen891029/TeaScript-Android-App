@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_wrap"
+    android:paddingTop="@dimen/space_10"
+    android:paddingBottom="@dimen/space_10"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time_tv"
+        style="@style/wrap_wrap"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_marginBottom="@dimen/space_15"
+        android:gravity="center"
+        android:textColor="@color/main_gray"
+        android:textSize="@dimen/text_size_12" />
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:paddingLeft="@dimen/space_10">
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/user_av"
+            style="@style/user_face_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/space_5"/>
+
+        <LinearLayout
+            style="@style/wrap_wrap"
+            android:gravity="center_vertical|left"
+            android:layout_toRightOf="@id/user_av"
+            android:paddingRight="@dimen/space_28"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/content_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/chat_from_bg_selector"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_riv"
+                    style="@style/wrap_wrap"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginTop="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_4"
+                    android:layout_marginBottom="@dimen/space_4"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+                <com.teacore.teascript.widget.TeatimeTextView
+                    android:id="@+id/content_ttv"
+                    style="@style/wrap_wrap"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_marginBottom="@dimen/space_8"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="你好你好你好你你好你好你好你你好你好你好你你好你好你好你你好你好你好你"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_status_rl"
+                android:layout_width="@dimen/space_24"
+                android:layout_height="@dimen/space_24"
+                android:layout_marginLeft="@dimen/space_10"
+                android:visibility="invisible">
+
+                <ProgressBar
+                    android:id="@+id/chat_pb"
+                    style="@style/chat_progressbar"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/error_tv"
+                    style="@style/list_text_info"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:text="{fa-exclamation-circle} "/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

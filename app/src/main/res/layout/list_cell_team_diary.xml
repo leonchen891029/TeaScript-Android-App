@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/match_wrap"
+                android:background="?attr/layout_item_bg"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingLeft="@dimen/space_6"
+                android:paddingTop="@dimen/space_10"
+                android:paddingRight="@dimen/space_6"
+                android:paddingBottom="@dimen/space_10">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/user_av"
+        style="@style/user_face_image"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_10" />
+
+    <TextView
+        android:id="@+id/author_tv"
+        style="@style/list_text_title"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_toRightOf="@id/user_av"
+        android:ellipsize="end"
+        android:textColor="?android:textColorLink"
+        android:maxLines="2"
+        android:text="周报作者 帆酱" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/wrap_wrap"
+        android:layout_below="@id/author_tv"
+        android:layout_marginBottom="@dimen/space_5"
+        android:layout_toRightOf="@id/user_av"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:textColor="?attr/infoTextColor"
+        android:text="听我BB"/>
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_below="@id/title_tv"
+        android:layout_toRightOf="@id/user_av">
+
+        <LinearLayout
+            style="@style/wrap_wrap"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <IconTextView
+                style="@style/list_text_info"
+                android:text="{fa-clock-o} " />
+
+            <TextView
+                android:id="@+id/date_tv"
+                style="@style/list_text_info"
+                android:text="2017 11-11"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <IconTextView
+                style="@style/list_text_info"
+                android:text="{fa-comments-o} " />
+
+            <TextView
+                android:id="@+id/comment_count_tv"
+                style="@style/list_text_info"
+                android:text="50"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="general_viewpager_arrays">
+        <item>资讯</item>
+        <item>博客</item>
+        <item>问答</item>
+        <item>活动</item>
+    </string-array>
+
+    <string-array name="teatimes_viewpager_arrays">
+        <item>最新Teatime</item>
+        <item>热门Teatime</item>
+        <item>我的Teatime</item>
+    </string-array>
+
+    <string-array name="teascript_viewpager_arrays">
+        <item>TeaScript</item>
+        <item>TVM虚拟机</item>
+        <item>Tea3D</item>
+    </string-array>
+
+    <!--Team-->
+    <string-array name="team_issue_state">
+        <item>待办中</item>
+        <item>进行中</item>
+        <item>已完成</item>
+        <item>已验收</item>
+    </string-array>
+
+    <string-array name="team_issue_state_en">
+        <item>opened</item>
+        <item>underway</item>
+        <item>closed</item>
+        <item>accepted</item>
+    </string-array>
+
+    <string-array name="team_main_viewpager">
+        <item>面板</item>
+        <item>任务</item>
+        <item>成员</item>
+    </string-array>
+
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>相机</item>
+    </string-array>
+
+    <array name="ques_item">
+        <item>提问</item>
+        <item>分享</item>
+        <item>综合</item>
+        <item>职业</item>
+        <item>站务</item>
+    </array>
+
+    <string-array name="blogs_viewpager_arrays">
+        <item>最新博客</item>
+        <item>推荐阅读</item>
+    </string-array>
+
+    <string-array name="report_reason">
+        <item>广告</item>
+        <item>色情</item>
+        <item>翻墙</item>
+        <item>非IT话题</item>
+    </string-array>
+
+
+    <string-array name="font_size">
+        <item>特大号字</item>
+        <item>大号字</item>
+        <item>中号字</item>
+        <item>小号字</item>
+    </string-array>
+
+    <string-array name="mymessage_viewpager_arrays">
+        <item>\@我</item>
+        <item>评论</item>
+        <item>私信</item>
+        <item>粉丝</item>
+        <item>赞过我</item>
+    </string-array>
+
+    <string-array name="opensourcesoftware_viewpager_arrays">
+        <item>分类</item>
+        <item>推荐</item>
+        <item>最新</item>
+        <item>热门</item>
+        <item>国产</item>
+    </string-array>
+
+    <string-array name="message_list_options">
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="friends_viewpager_arrays">
+        <item>关注</item>
+        <item>粉丝</item>
+    </string-array>
+
+    <string-array name="userfavorite_viewpager_arrays">
+        <item>软件</item>
+        <item>话题</item>
+        <item>代码</item>
+        <item>博客</item>
+        <item>资讯</item>
+    </string-array>
+
+    <string-array name="search_viewpager_arrays">
+        <item>软件</item>
+        <item>问答</item>
+        <item>博客</item>
+        <item>资讯</item>
+    </string-array>
+
+    <string-array name="events_viewpager_arrays">
+        <item>近期活动</item>
+        <item>我的活动</item>
+    </string-array>
+
+    <string-array name="avatar_option">
+        <item>更换头像</item>
+        <item>查看大头像</item>
+    </string-array>
+
+</resources>

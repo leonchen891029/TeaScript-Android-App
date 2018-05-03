@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pub_menu_send"
+        android:icon="@drawable/actionbar_send_icon"
+        android:title="@string/teatime_pub"
+        android:visible="true"
+        app:showAsAction="always"/>
+</menu>

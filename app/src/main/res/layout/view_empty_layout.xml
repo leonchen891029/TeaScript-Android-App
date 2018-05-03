@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_layout_rl"
+    style="@style/match_match"
+    android:background="?attr/layout_bg_normal">
+
+    <RelativeLayout
+        style="@style/match_match">
+
+        <LinearLayout
+            style="@style/wrap_wrap"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/wrap_wrap"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/empty_layout_iv"
+                    style="@style/wrap_wrap"
+                    android:background="@drawable/pagefailed_bg"
+                    android:visibility="gone" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/indicatorView"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    style="@style/AVLoadingIndicatorView.Small"
+                    app:indicatorName="BallGridPulseIndicator"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/empty_layout_tv"
+                style="@style/wrap_wrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dp"
+                android:gravity="center"
+                android:lines="2"
+                android:text="@string/error_view_loading"
+                android:textColor="?attr/infoTextColor"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

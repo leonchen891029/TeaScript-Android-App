@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/windows_bg"
+              android:padding="10dp"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/issue_title_et"
+        style="@style/match_wrap"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:textColor="?android:editTextColor"
+        android:background="@drawable/edit_bg_selector"
+        android:hint="任务标题"/>
+
+    <RelativeLayout
+        android:id="@+id/issue_project_rl"
+        style="@style/team_new_issue_layout"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/issue_project_fa_tv"
+            style="@style/team_new_issue_fa"
+            android:text="@string/fa_inbox" />
+
+        <TextView
+            style="@style/team_new_issue_tip"
+            android:layout_toRightOf="@id/issue_project_fa_tv"
+            android:text="项目"/>
+
+        <TextView
+            android:id="@+id/issue_project_tv"
+            style="@style/team_new_issue_info"
+            android:text="不指定项目"/>
+
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/issue_catalog_rl"
+        style="@style/team_new_issue_layout">
+
+        <TextView
+            android:id="@+id/issue_catalog_fa_tv"
+            style="@style/team_new_issue_fa"
+            android:text="@string/fa_list_alt"
+            android:textSize="16sp"/>
+
+        <TextView
+            style="@style/team_new_issue_tip"
+            android:layout_toRightOf="@id/issue_catalog_fa_tv"
+            android:text="任务分组" />
+
+        <TextView
+            android:id="@+id/issue_catalog_tv"
+            style="@style/team_new_issue_info"
+            android:text="未指定列表"/>
+
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/issue_assign_rl"
+        style="@style/team_new_issue_layout">
+
+        <TextView
+            android:id="@+id/issue_assign_fa_tv"
+            style="@style/team_new_issue_fa"
+            android:text="@string/fa_user"/>
+
+        <TextView
+            style="@style/team_new_issue_tip"
+            android:layout_toRightOf="@id/issue_assign_fa_tv"
+            android:text="指派成员"/>
+
+        <TextView
+            android:id="@+id/issue_assign_tv"
+            style="@style/team_new_issue_info"
+            android:text="未指派"/>
+
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/issue_time_rl"
+        style="@style/team_new_issue_layout">
+
+        <TextView
+            android:id="@+id/issue_time_fa_tv"
+            style="@style/team_new_issue_fa"
+            android:text="@string/fa_clock_o" />
+
+        <TextView
+            style="@style/team_new_issue_tip"
+            android:layout_toRightOf="@id/issue_time_fa_tv"
+            android:text="完成时间"/>
+
+        <TextView
+            android:id="@+id/issue_time_tv"
+            style="@style/team_new_issue_info"/>
+
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/issue_push_rl"
+        style="@style/match_wrap"
+        android:clickable="true"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/issue_push_tv"
+            style="@style/wrap_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="?android:attr/textColor"
+            android:text="同步到Git@TeaScript" />
+
+        <CheckBox
+            android:id="@+id/issue_push_cb"
+            style="@style/wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/push_line"
+        style="@style/h_line"/>
+
+</LinearLayout>

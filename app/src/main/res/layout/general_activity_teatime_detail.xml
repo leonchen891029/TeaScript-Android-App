@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/improve_activity_teatime_detail"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        style="@style/match_wrap"
+        android:background="#FFF"
+        app:elevation="0dp">
+
+        <LinearLayout
+            style="@style/match_match"
+            android:padding="@dimen/space_16"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|snap">
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:orientation="horizontal">
+
+                <com.teacore.teascript.widget.AvatarView
+                    android:id="@+id/user_av"
+                    android:layout_width="@dimen/space_48"
+                    android:layout_height="@dimen/space_48"
+                    android:src="@drawable/widget_dface"/>
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/space_8"
+                    android:layout_marginStart="@dimen/space_8"
+                    android:textColor="#111111"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="帆酱"/>
+
+            </LinearLayout>
+
+            <com.teacore.teascript.module.general.widget.TWebView
+                android:id="@+id/webview"
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/space_8"
+                android:background="@color/white"
+                android:scrollbars="none"/>
+
+            <RelativeLayout
+                android:id="@+id/teatime_record_rl"
+                android:layout_width="@dimen/space_100"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:padding="@dimen/space_4"
+                android:background="@drawable/record_layout_selector"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/teatime_record_iv"
+                    android:layout_width="@dimen/space_24"
+                    android:layout_height="@dimen/space_24"
+                    android:background="@drawable/audio_animations"/>
+
+                <TextView
+                    android:id="@+id/teatime_record_tv"
+                    style="@style/wrap_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_4"
+                    android:layout_marginEnd="@dimen/space_4"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="34'"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/space_8">
+
+                <TextView
+                    android:id="@+id/pub_date_tv"
+                    style="@style/wrap_wrap"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="6分钟前"/>
+
+                <TextView
+                    android:id="@+id/client_tv"
+                    style="@style/wrap_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_8"
+                    android:layout_marginStart="@dimen/space_8"
+                    android:layout_toRightOf="@id/pub_date_tv"
+                    android:layout_toEndOf="@id/pub_date_tv"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="Android"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/comment_iv"
+                    android:layout_width="@dimen/space_14"
+                    android:layout_height="@dimen/space_14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_4"
+                    android:layout_toLeftOf="@id/comment_count_tv"
+                    android:layout_toStartOf="@id/comment_count_tv"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_comment" />
+
+                <ImageView
+                    android:id="@+id/thumbup_iv"
+                    android:layout_width="@dimen/space_14"
+                    android:layout_height="@dimen/space_14"
+                    android:layout_marginLeft="@dimen/space_8"
+                    android:layout_marginRight="@dimen/space_8"
+                    android:layout_toLeftOf="@id/comment_iv"
+                    android:layout_toStartOf="@id/comment_iv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/thumbup_selector" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_fl"
+        style="@style/match_match"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/windows_bg">
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        style="@style/match_match" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        style="@style/match_match" >
+
+        <com.teacore.teascript.widget.KJDragGridView
+            android:id="@+id/notebook_gv"
+            style="@style/match_match"
+            android:numColumns="2" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/notebook_iv"
+        style="@style/wrap_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/space_20"
+        android:src="@drawable/icon_notebook_delete"
+        android:visibility="invisible" />
+
+</RelativeLayout>

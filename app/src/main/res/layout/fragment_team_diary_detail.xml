@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal" >
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/user_av"
+            style="@style/UserFaceImageStyle"
+            android:layout_margin="@dimen/space_10" />
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/list_cell_text"
+                android:textColor="?android:textColorLink"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginBottom="@dimen/space_6"
+                android:text="作者"/>
+
+            <TextView
+                android:id="@+id/date_tv"
+                style="@style/events_list_data"
+                android:layout_marginTop="@dimen/space_6"
+                android:textColor="?attr/infoTextColor"
+                android:gravity="left"
+                android:text="前天"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?attr/lineColor" />
+
+    <WebView
+        android:id="@+id/webview"
+        style="@style/match_wrap"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+    package="com.teacore.teascript">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 在SDCARD中创建和删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 取得账户的权限(邮件) -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 允许应用程序请求AccountManager -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 允许应用程序管理AccountManager -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 允许一个程序通过账户验证方式访问ACCOUNT_MANAGER相关信息 -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <!-- 查询快捷方式的权限 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".app.AppContext"
+        android:theme="@style/AppBaseTheme_Light"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup">
+
+        <!-- 应用程序介绍界面 -->
+        <activity android:name=".app.AppWelcome"
+                  android:label="@string/app_name" />
+
+        <!-- 应用程序启动界面 -->
+        <activity android:name=".app.AppStart"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Theme.AppStartLoad" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- 主界面Activity -->
+        <activity android:name=".module.main.MainActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.teascript.com.cn"
+                    android:scheme="http"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="www.teascript.com.cn"
+                    android:scheme="https"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="my.teascript.com.cn"
+                    android:scheme="http"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="my.teascript.com.cn"
+                    android:scheme="https"/>
+            </intent-filter>
+
+        </activity>
+
+        <!-- Teatime发布activity -->
+        <activity android:name=".module.quickoption.activity.TeatimePubActivity"
+                  android:label="发布Teatime"
+                  android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- 选择朋友的Activity -->
+        <activity android:name=".module.quickoption.activity.SelectFriendsActivity"
+                  android:label="选择好友"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 找人Activity -->
+        <activity android:name=".module.quickoption.activity.FindUserActivity"
+                  android:label="找人"
+                  android:screenOrientation="portrait"/>
+
+        <!-- 摇一摇Activity -->
+        <activity android:name=".module.quickoption.activity.ShakeActivity"
+                  android:label="摇一摇"
+                  android:screenOrientation="portrait" />
+
+        <!-- 登录Activity -->
+        <activity android:name=".module.login.LoginActivity"
+                  android:label="登录"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"/>
+
+        <!--用户绑定注册Activity -->
+        <activity android:name=".module.login.BindRegisterActivity"
+                  android:label="注册"
+                  android:screenOrientation="portrait" />
+
+        <!-- 绑定第三方登录账号 -->
+        <activity android:name=".module.login.BindOpenIdActivity"
+                  android:label="绑定第三方登录账号"
+                  android:screenOrientation="portrait" />
+
+        <!-- 图片预览Activity -->
+        <activity android:name=".module.general.activity.PreviewImageActivity"
+                  android:label="图片预览"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/PreviewPhotos" />
+
+        <!-- 加载不同详情Fragment的Activity -->
+        <activity android:name=".module.detail.DetailActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!-- 加载不同Fragment的Activity-->
+        <activity android:name=".module.back.BackActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|stateUnchanged" />
+
+        <!-- 团队主界面Activity -->
+        <activity android:name=".team.activity.TeamMainActivity"
+                  android:label="团队主界面"
+                  android:screenOrientation="portrait" />
+
+        <!-- 团队新动态Activity -->
+        <activity android:name=".team.activity.TeamNewActiveActivity"
+                  android:label="团队新动态"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 团队新任务Activity -->
+        <activity android:name=".team.activity.TeamNewIssueActivity"
+                  android:label="团队新任务"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 二维码Activity -->
+        <activity android:name="com.dtr.zxing.activity.CaptureActivity"
+                  android:label="二维码"
+                  android:screenOrientation="portrait" />
+
+        <!-- 综合下的Teatime详情Activity -->
+        <activity android:name=".module.general.teatime.TeatimeDetailActivity"
+                  android:label="Teatime详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的Blog详情Activity -->
+        <activity android:name=".module.general.detail.activity.BlogDetailActivity"
+                  android:label="博客详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的活动详情Activity -->
+        <activity android:name=".module.general.detail.activity.EventDetailActivity"
+                  android:label="活动详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的新闻详情Activity -->
+        <activity android:name=".module.general.detail.activity.NewsDetailActivity"
+                  android:label="资讯详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的问答详情Activity -->
+        <activity android:name=".module.general.detail.activity.QuestionDetailActivity"
+                  android:label="问答详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的软件详情Activity -->
+        <activity android:name=".module.general.detail.activity.SoftwareDetailActivity"
+                  android:label="软件详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的翻译详情Activity -->
+        <activity android:name=".module.general.detail.activity.TranslationDetailActivity"
+                  android:label="翻译详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的评论Activity -->
+        <activity android:name=".module.general.comment.CommentsActivity"
+                  android:label="评论"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的问答评论Activity -->
+        <activity android:name=".module.general.comment.CommentQActivity"
+                  android:label="问答详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!-- 综合下的评论详情Activity -->
+        <activity android:name=".module.general.comment.QuestionCommentDetailActivity"
+                  android:label="评论详情"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!--UMENG 新浪Activity-->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--UMENG QQ Activity-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <!--UMENG 微信 Activity-->
+        <activity android:name=".wxapi.WXEntryActivity"/>
+
+        <!--                                SERVICE                                          -->
+        <!-- 任务服务类 -->
+        <service android:name=".service.TaskService">
+            <intent-filter>
+                <action android:name="com.teacore.teascript.ACTION_PUB_BLOG_COMMENT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.teacore.teascript.ACTION_PUB_COMMENT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.teacore.teascript.ACTION_PUB_POST" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.teacore.teascript.ACTION_PUB_TEATIME" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.teacore.teascript.ACTION_PUB_SOFTWARE_TEATIME" />
+            </intent-filter>
+        </service>
+
+        <!-- 消息服务类(新进程) -->
+        <service android:name=".service.NoticeService"
+                 android:process=":notice" />
+
+        <!-- 下载服务类 -->
+        <service android:name=".service.DownloadService" />
+        
+        <!-- 百度位置服务类 -->
+        <!-- <service android:name="com.baidu.location.f"
+                 android:enabled="true"
+                 android:process=":remote"/> -->
+
+        <receiver android:name=".broadcast.NoticeReceiver" />
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59e35345717c1973cf000013"/>
+
+        <!-- baidu lbs api key-->
+        <meta-data android:name="com.baidu.lbsapi.API_KEY"
+                   android:value="pIbgtjFevz8LlkbNsYUNl4Qp" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:clipChildren="false"
+              android:clipToPadding="false"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <com.ramotion.foldingcell.FoldingCell
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tvm_folding_cell"
+        style="@style/match_wrap"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        folding-cell:animationDuration="1000"
+        folding-cell:backSideColor="@color/gray"
+        folding-cell:additionalFlipsCount="2"
+        folding-cell:cameraHeight="30">
+
+        <FrameLayout
+            android:id="@+id/tvm_cell_content_view"
+            style="@style/match_wrap"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@drawable/bg_teascript"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/match_wrap"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="48sp"
+                    android:textColor="@color/white"
+                    android:text="Tea Virtual Machine"/>
+
+                <TextView
+                    style="@style/match_wrap"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:maxLines="2"
+                    android:text="旨在利用多线程并行技术智能化我们的世界"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+        ​
+        <FrameLayout
+            android:id="@+id/tvm_cell_title_view"
+            style="@style/match_wrap">
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="380dp"
+                android:layout_height="120dp"
+                android:src="@drawable/tvm"
+                android:scaleType="fitXY"/>
+
+        </FrameLayout>
+        ​
+    </com.ramotion.foldingcell.FoldingCell>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/match_match"
+                android:visibility="gone" >
+
+    <ImageView
+        android:id="@+id/notebook_edit_menu_iv"
+        style="@style/notebook_edit_menu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/space_28"
+        android:layout_marginRight="@dimen/space_15"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="invisible" />
+
+    <com.teacore.teascript.widget.NotebookCircleView
+        android:id="@+id/notebook_edit_green_ncv"
+        style="@style/notebook_edit_menu_item"
+        android:layout_alignLeft="@id/notebook_edit_menu_iv"
+        android:layout_below="@id/notebook_edit_menu_iv"
+        android:src="#ffcef3d4"
+        app:border_color="@color/white"
+        app:border_width="@dimen/space_2" />
+
+    <com.teacore.teascript.widget.NotebookCircleView
+        android:id="@+id/notebook_edit_blue_ncv"
+        style="@style/notebook_edit_menu_item"
+        android:layout_alignLeft="@id/notebook_edit_menu_iv"
+        android:layout_below="@id/notebook_edit_green_ncv"
+        android:src="#ffb9e5f2"
+        app:border_color="@color/white"
+        app:border_width="@dimen/space_2" />
+
+    <com.teacore.teascript.widget.NotebookCircleView
+        android:id="@+id/notebook_edit_purple_ncv"
+        style="@style/notebook_edit_menu_item"
+        android:layout_alignLeft="@id/notebook_edit_menu_iv"
+        android:layout_below="@id/notebook_edit_blue_ncv"
+        android:src="#ffede7e9"
+        app:border_color="@color/white"
+        app:border_width="2dip" />
+
+    <com.teacore.teascript.widget.NotebookCircleView
+        android:id="@+id/notebook_edit_yellow_ncv"
+        style="@style/notebook_edit_menu_item"
+        android:layout_alignLeft="@id/notebook_edit_menu_iv"
+        android:layout_below="@id/notebook_edit_purple_ncv"
+        android:src="#fffbf5b9"
+        app:border_color="@color/white"
+        app:border_width="2dip" />
+
+    <com.teacore.teascript.widget.NotebookCircleView
+        android:id="@+id/notebook_edit_red_ncv"
+        style="@style/notebook_edit_menu_item"
+        android:layout_alignLeft="@+id/notebook_edit_menu_iv"
+        android:layout_below="@id/notebook_edit_yellow_ncv"
+        android:src="#fffcd4d3"
+        app:border_color="@color/white"
+        app:border_width="2dip" />
+
+</RelativeLayout>

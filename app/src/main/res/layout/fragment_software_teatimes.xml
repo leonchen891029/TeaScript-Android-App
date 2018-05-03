@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/layout_item_bg">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        style="@style/match_match"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/listview"
+            style="@style/match_match"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        style="@style/match_match"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/software_teatime_ll"
+        style="@style/match_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="end|bottom"
+        android:paddingLeft="8dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/software_teatime_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_8"
+            android:layout_marginBottom="@dimen/space_8"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingTop="@dimen/space_6"
+            android:paddingBottom="@dimen/space_6"
+            android:background="@drawable/edit_bg_selector"
+            android:hint="发表评论"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

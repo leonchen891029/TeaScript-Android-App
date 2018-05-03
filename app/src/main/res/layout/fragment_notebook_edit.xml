@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+    <EditText
+        android:id="@+id/notebook_edit_et"
+        style="@style/match_match"
+        android:layout_marginTop="48dp"
+        android:gravity="top"
+        android:hint="来吧,编辑我!"
+        android:minLines="2"
+        android:textColor="#333" />
+
+    <include
+        android:id="@+id/notebook_edit_menu"
+        layout="@layout/item_notebook_edit_menu" />
+
+    <RelativeLayout
+        android:id="@+id/notebook_edit_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/space_15"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15" >
+
+        <TextView
+            android:id="@+id/notebook_edit_date_tv"
+            style="@style/wrap_match"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#666" />
+
+        <ImageView
+            android:id="@+id/notebook_edit_iv"
+            style="@style/notebook_edit_menu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_color" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/notebook_edit_thumbtack_iv"
+        style="@style/wrap_wrap"
+        android:layout_alignBottom="@id/notebook_edit_title_rl"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/space_5" />
+
+</RelativeLayout>

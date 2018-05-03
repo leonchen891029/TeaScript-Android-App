@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:orientation="vertical">
+
+    <com.teacore.teascript.widget.TSRefreshLayout
+        android:id="@+id/ts_refreshlayout"
+        style="@style/match_match"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/listview"
+            style="@style/match_match"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"/>
+
+    </com.teacore.teascript.widget.TSRefreshLayout>
+
+    <com.teacore.teascript.widget.EmptyLayout
+        android:id="@+id/empty_layout"
+        style="@style/match_match"
+        android:visibility="visible" />
+
+</LinearLayout>

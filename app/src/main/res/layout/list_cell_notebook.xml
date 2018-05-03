@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/notebook_rl"
+                style="@style/match_match"
+                android:paddingLeft="@dimen/space_2"
+                android:paddingTop="@dimen/space_5"
+                android:paddingRight="@dimen/space_2">
+
+    <RelativeLayout
+        android:id="@+id/notebook_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_24"
+        android:layout_marginTop="@dimen/space_10"
+        android:paddingLeft="@dimen/space_8"
+        android:paddingRight="@dimen/space_8" >
+
+        <TextView
+            android:id="@+id/notebook_date_tv"
+            style="@style/wrap_match"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/notebook_state_iv"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_upload" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notebook_content_tv"
+        style="@style/match_match"
+        android:layout_below="@id/notebook_title_rl"
+        android:gravity="top"
+        android:maxLines="5"
+        android:minLines="2"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingTop="@dimen/space_20"
+        android:paddingRight="@dimen/space_5"
+        android:paddingBottom="@dimen/space_20"
+        android:textColor="#333" />
+
+    <ImageView
+        android:id="@+id/notebook_thumbtack_iv"
+        android:layout_width="@dimen/space_32"
+        android:layout_height="@dimen/space_32"
+        android:layout_alignBottom="@id/notebook_title_rl"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/space_2" />
+
+</RelativeLayout>

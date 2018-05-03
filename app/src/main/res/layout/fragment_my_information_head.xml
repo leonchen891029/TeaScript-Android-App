@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:background="@drawable/my_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/user_center_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <com.teacore.teascript.widget.AvatarView
+                android:id="@+id/avatar_av"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_20"
+                android:src="@drawable/widget_dface"
+                app:border_color="@color/white"
+                app:border_width="2dp"/>
+
+            <ImageView
+                android:id="@+id/gender_iv"
+                style="@style/wrap_wrap"
+                android:layout_alignBottom="@id/avatar_av"
+                android:layout_alignRight="@id/avatar_av"/>
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/wrap_wrap"
+                android:layout_below="@id/avatar_av"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:id="@+id/qr_code_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:clickable="true"
+                android:src="@drawable/icon_qr_code"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/score_ll"
+                style="@style/user_information_ll">
+
+                <TextView
+                    android:id="@+id/score_tv"
+                    style="@style/user_information_text" />
+
+                <TextView
+                    style="@style/user_information_info"
+                    android:text="@string/user_score" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/favorite_ll"
+                style="@style/user_information_ll">
+
+                <TextView
+                    android:id="@+id/favorite_tv"
+                    style="@style/user_information_text" />
+
+                <TextView
+                    style="@style/user_information_info"
+                    android:text="@string/favorite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/following_ll"
+                style="@style/user_information_ll">
+
+                <TextView
+                    android:id="@+id/following_tv"
+                    style="@style/user_information_text" />
+
+                <TextView
+                    style="@style/user_information_info"
+                    android:text="@string/following" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/follower_ll"
+                style="@style/user_information_ll">
+
+                <TextView
+                    android:id="@+id/follower_tv"
+                    style="@style/user_information_text" />
+
+                <TextView
+                    style="@style/user_information_info"
+                    android:text="@string/follower" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_unlogin_ll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.teacore.teascript.widget.CircleImageView
+            android:id="@+id/unlogin_civ"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_20"
+            android:src="@drawable/widget_dface"
+            app:border_color="@color/white"
+            app:border_width="3dp"/>
+
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_5"
+            android:text="@string/my_information_unlogin_tips"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18" />
+
+    </LinearLayout>
+
+</LinearLayout>

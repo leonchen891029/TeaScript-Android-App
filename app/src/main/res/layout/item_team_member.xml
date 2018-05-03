@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:clickable="false"
+              android:padding="5dp"
+              android:orientation="vertical">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/team_member_av"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center" />
+
+    <com.teacore.teascript.widget.CircleImageView
+        android:id="@+id/team_member_tip"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/iteam_member_name"
+        style="@style/wrap_wrap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="?attr/infoTextColor"
+        android:layout_marginTop="7dp"
+        android:clickable="false"
+        android:gravity="center" />
+
+</LinearLayout>

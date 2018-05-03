@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/wrap_match"
+                android:descendantFocusability="afterDescendants"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingTop="4dp">
+
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_tab_new_selector" />
+
+    <TextView
+        android:id="@+id/tab_title_tv"
+        style="@style/wrap_wrap"
+        android:layout_below="@id/icon_iv"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="@color/tabhost_textcolor_selector"
+        android:textSize="12sp"
+        tools:text="资讯" />
+
+    <TextView
+        android:id="@+id/tab_mes_tv"
+        style="@style/wrap_wrap"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/tab_title_tv"
+        android:layout_alignTop="@id/tab_title_tv"
+        android:layout_marginLeft="1dip"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

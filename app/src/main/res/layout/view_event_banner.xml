@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:minHeight="184dp">
+    
+    <ImageView 
+        android:id="@+id/event_banner_bg_iv"
+        style="@style/match_match"
+        android:scaleType="centerCrop" />
+    
+    <ImageView
+        android:id="@+id/event_banner_img_iv"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginRight="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_24"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        style="@style/match_match"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginRight="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_24"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/event_banner_img_iv">
+
+        <TextView
+            android:id="@+id/event_banner_title_tv"
+            style="@style/match_wrap"
+            android:layout_gravity="top"
+            android:layout_marginRight="@dimen/space_16"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="TeaScript大会"/>
+
+        <TextView
+            android:id="@+id/event_banner_body_tv"
+            style="@style/match_match"
+            android:layout_marginTop="@dimen/space_12"
+            android:gravity="bottom"
+            android:ellipsize="start"
+            android:textSize="12sp"
+            android:maxLines="4"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

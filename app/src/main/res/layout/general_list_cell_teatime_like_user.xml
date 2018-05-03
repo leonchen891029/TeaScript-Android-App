@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_wrap"
+              android:background="@drawable/item_bg_selector"
+              android:orientation="vertical">
+    
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginStart="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:orientation="horizontal">
+
+        <com.teacore.teascript.widget.AvatarView
+            android:id="@+id/avatar_av"
+            style="@style/user_face_image"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/wrap_wrap"
+            android:layout_marginStart="@dimen/space_8"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_gravity="center"
+            android:textColor="?attr/android:textColor"
+            android:text="帆酱"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginStart="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_16"
+        android:background="@color/list_divider_color"/>
+    
+
+</LinearLayout>

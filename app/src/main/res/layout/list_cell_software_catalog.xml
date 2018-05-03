@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/layout_item_bg"
+              android:padding="@dimen/space_15">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/wrap_wrap"
+        android:textColor="?attr/android:textColor"
+        android:textSize="@dimen/text_size_16"
+        android:text="编程语言"/>
+
+    <ImageView
+        style="@style/wrap_wrap"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_8"
+        android:src="@drawable/icon_item_goto_right_tip" />
+
+</RelativeLayout>

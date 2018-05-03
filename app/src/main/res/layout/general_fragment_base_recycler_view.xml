@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:orientation="vertical">
+
+    <com.teacore.teascript.module.general.widget.RecyclerRefreshLayout
+        android:id="@+id/refreshlayout"
+        style="@style/match_match"
+        android:background="#FFF">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            style="@style/match_match"
+            android:scrollbars="vertical"/>
+
+    </com.teacore.teascript.module.general.widget.RecyclerRefreshLayout>
+
+</LinearLayout>

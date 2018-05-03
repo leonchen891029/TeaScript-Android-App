@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/windows_bg">
+
+    <ImageView
+        android:id="@+id/shake_iv"
+        style="@style/wrap_wrap"
+        android:layout_centerInParent="true"
+        android:src="@drawable/shaking"/>
+
+    <ProgressBar
+        android:id="@+id/shake_pb"
+        style="@style/wrap_wrap"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+    <include layout="@layout/list_cell_shake_result"
+             android:id="@+id/shake_bottom_ll"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:visibility="gone"/>
+
+</RelativeLayout>

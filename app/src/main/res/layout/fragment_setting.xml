@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/match_match"
+            android:background="?attr/layout_item_bg"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+    <LinearLayout
+        style="@style/match_match"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/h_line"
+            android:layout_marginTop="@dimen/space_20"/>
+
+        <RelativeLayout
+            android:id="@+id/loading_img_rl"
+            style="@style/option_item_ll" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/loading_img"/>
+
+            <com.teacore.teascript.widget.TSSwitchButton
+                android:id="@+id/loading_img_sb"
+                style="@style/option_item_switchbutton"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line" />
+
+        <RelativeLayout
+            android:id="@+id/notification_rl"
+            style="@style/option_item_ll" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/message_notice"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line" />
+
+        <RelativeLayout
+            android:id="@+id/clean_cache_rl"
+            style="@style/option_item_ll" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/clean_cache"/>
+
+            <TextView
+                android:id="@+id/clean_cache_tv"
+                style="@style/wrap_wrap"
+                android:layout_alignParentRight="true"
+                android:textColor="?attr/infoTextColor"
+                android:textSize="@dimen/text_size_14"
+                android:text="13M"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line" />
+
+        <RelativeLayout
+            android:id="@+id/double_click_exit_rl"
+            style="@style/option_item_ll" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/double_click_exit"/>
+
+            <com.teacore.teascript.widget.TSSwitchButton
+                android:id="@+id/double_click_exit_sb"
+                style="@style/option_item_switchbutton"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line"/>
+
+        <RelativeLayout
+            android:id="@+id/loading_more_rl"
+            style="@style/option_item_ll"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/loading_more"/>
+
+            <com.teacore.teascript.widget.TSSwitchButton
+                android:id="@+id/loading_more_sb"
+                style="@style/option_item_switchbutton"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_marginTop="20dip"/>
+
+        <RelativeLayout
+            android:id="@+id/about_ts_rl"
+            style="@style/option_item_ll" >
+
+            <TextView
+                style="@style/option_item_text_parent"
+                android:text="@string/about_teascript"
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line" />
+
+        <RelativeLayout
+            android:id="@+id/exit_rl"
+            style="@style/option_item_ll" >
+
+            <TextView
+                android:id="@+id/exit_tv"
+                style="@style/option_item_text_parent"
+
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/exit"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/h_line" />
+
+    </LinearLayout>
+
+</ScrollView>

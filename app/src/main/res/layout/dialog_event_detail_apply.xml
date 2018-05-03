@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:padding="@dimen/space_16"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/dialog_event_apply_textview"
+        android:layout_marginTop="0dp"
+        android:text="姓名* "/>
+
+    <EditText
+        android:id="@+id/name_et"
+        style="@style/match_wrap"
+        android:background="@drawable/edit_bg_selector"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"
+        android:paddingRight="@dimen/space_12"
+        android:paddingBottom="@dimen/space_8"
+        android:textSize="14sp"/>
+
+    <TextView
+        style="@style/dialog_event_apply_textview"
+        android:text="性别* "/>
+
+    <RadioGroup
+        style="@style/match_wrap"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/male_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="男"/>
+        <RadioButton
+            android:id="@+id/female_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+
+    <TextView
+        style="@style/dialog_event_apply_textview"
+        android:text="电话* "/>
+
+    <EditText
+        android:id="@+id/phone_et"
+        style="@style/match_wrap"
+        android:background="@drawable/edit_bg_selector"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"
+        android:paddingRight="@dimen/space_12"
+        android:paddingBottom="@dimen/space_8"
+        android:textSize="14sp" />
+
+    <View
+        style="@style/h_line"
+        android:layout_height="1px"
+        android:layout_marginTop="12sp" />
+
+    <TextView
+        style="@style/dialog_event_apply_textview"
+        android:text="单位名称* " />
+
+    <EditText
+        android:id="@+id/company_et"
+        style="@style/match_wrap"
+        android:background="@drawable/edit_bg_selector"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"
+        android:paddingRight="@dimen/space_12"
+        android:paddingBottom="@dimen/space_8"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/dialog_event_apply_textview"
+        android:text="职业名称* " />
+
+    <EditText
+        android:id="@+id/job_et"
+        style="@style/match_wrap"
+        android:background="@drawable/edit_bg_selector"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingTop="@dimen/space_8"
+        android:paddingRight="@dimen/space_12"
+        android:paddingBottom="@dimen/space_8"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/remarks_tip_tv"
+        style="@style/dialog_event_apply_textview"
+        android:text="备注"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/remarks_selector_tv"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/space_2"
+        android:drawableRight="@drawable/icon_item_goto_right_tip"
+        android:gravity="center_vertical"
+        android:padding="@dimen/space_8"
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+</LinearLayout>

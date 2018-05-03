@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/match_wrap"
+                android:padding="@dimen/space_10">
+
+    <ImageView
+        android:id="@+id/notification_iv"
+        style="@style/wrap_wrap"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_10"
+        android:src="@drawable/icon_notification"/>
+
+    <TextView
+        android:id="@+id/download_state_tv"
+        style="@style/wrap_wrap"
+        android:layout_toRightOf="@id/notification_iv"
+        android:text="@string/down_state"/>
+
+    <ProgressBar
+        android:id="@+id/download_pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/download_state_tv"
+        android:layout_toRightOf="@id/notification_iv"
+        android:max="100"
+        android:progress="0" />
+
+
+
+
+
+</RelativeLayout>

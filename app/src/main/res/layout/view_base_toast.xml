@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       style="@style/wrap_wrap">
+
+    <RelativeLayout
+        style="@style/wrap_wrap"
+        android:background="@drawable/toast_background"
+        android:paddingLeft="@dimen/space_16"
+        android:paddingTop="@dimen/global_padding"
+        android:paddingRight="@dimen/space_16"
+        android:paddingBottom="@dimen/global_padding">
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_40"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/global_padding"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/action_tv"
+            style="@style/wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="1.0"
+            android:textColor="@android:color/white"
+            android:textSize="14.0dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/wrap_wrap"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/action_tv"
+            android:layout_toRightOf="@id/icon_iv"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="1.0"
+            android:textColor="@android:color/white"
+            android:textSize="14.0dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</merge>

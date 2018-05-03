@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/match_match"
+              android:background="?attr/layout_bg_normal"
+              android:padding="@dimen/space_8"
+              android:orientation="horizontal">
+
+    <com.teacore.teascript.widget.AvatarView
+        android:id="@+id/user_av"
+        style="@style/user_face_image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sender_tv"
+                style="@style/wrap_wrap"
+                android:layout_marginLeft="@dimen/space_8"
+                android:textColor="?attr/infoTextColor"
+                android:textSize="@dimen/text_size_14"
+                android:text="@string/send_to"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_8"
+                android:textColor="?android:textColorLink"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="@dimen/space_4"
+            android:padding="@dimen/space_8"
+            android:background="?attr/message_bg_left"
+            android:orientation="vertical">
+
+            <com.teacore.teascript.widget.TeatimeTextView
+                android:id="@+id/content_ttv"
+                style="@style/match_wrap"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginBottom="@dimen/space_4"
+                android:textColor="?attr/android:textColor"
+                android:textSize="@dimen/text_size_16" />
+
+            <RelativeLayout
+                style="@style/match_wrap"
+                android:layout_marginLeft="@dimen/space_8"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    style="@style/list_text_info"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/text_size_12"
+                    android:text="3天前"/>
+
+                <TextView
+                    android:id="@+id/count_tv"
+                    style="@style/list_text_info"
+                    android:layout_alignParentRight="true"
+                    android:text="58"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

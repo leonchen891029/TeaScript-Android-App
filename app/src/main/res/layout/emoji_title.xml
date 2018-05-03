@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/emoji_title"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/layout_item_bg"
+    android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/flag_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/checkbox_flag_selector"
+        android:button="@null"
+        android:checked="false"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/emoji_titile_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="说点什么吧"
+            android:minHeight="35dp"
+            android:textColor="?android:editTextColor"
+            android:textSize="17sp" />
+
+        <CheckBox
+            android:id="@+id/emoji_title_checkbox"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/emoji_keyboard_selector"
+            android:button="@null"
+            android:checked="false"
+            android:focusable="false" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/emoji_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/emoji_imageview_send_selector" />
+
+
+</LinearLayout>
