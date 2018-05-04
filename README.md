@@ -25,9 +25,13 @@ Android Studio
 <font size=4>**(1)综合界面**</font>
 
 <font size=4>分为四个模块，资讯，博客，问答，活动</font>
+
 <font size=4>资讯页面:提供TeaScript语言的相关资讯</font>
+
 <font size=4>博客页面:提供最热和最新的用户博客</font>
+
 <font size=4>问答页面:提供相关的问题解答</font>
+
 <font size=4>活动页面:提供相关的活动信息</font>
 
 <font size=4>其中资讯和活动中有HeaderView进行轮播展示，问答界面上方有一个GridView用来细分问答的种类</font>
